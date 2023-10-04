@@ -13,6 +13,7 @@ import stickyElements from "./stickyElements";
 import nav from "./nav";
 import selects from "./selects";
 import lazyloading from "./lazyloading";
+import checkoutForm from "./checkoutForm";
 
 document.addEventListener("DOMContentLoaded", () => {
   smoothScrolling();
@@ -28,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
   menu();
   stickyElements();
   nav();
+  checkoutForm();
 });
 
 window.addEventListener("load", () => {

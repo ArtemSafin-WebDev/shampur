@@ -1,4 +1,4 @@
-<section class="checkout">
+<section class="checkout js-checkout-delivery">
     <div class="checkout__content">
         <div class="checkout__top-row">
             <a href="#" class="checkout__logo">
@@ -39,7 +39,7 @@
                             Самовывоз
                         </a>
                     </div>
-                    <form action="/" method="POST" class="checkout__form" id="checkout-form">
+                    <form action="/" method="POST" class="checkout__form js-checkout-form" id="checkout-form">
                         <div class="checkout__form-block">
                             <h3 class="checkout__form-block-heading">
                                 личные данные
@@ -78,13 +78,13 @@
                                 <div class="checkout__form-fields">
                                     <div class="checkout__form-field checkout__form-field--fullwidth">
                                         <label class="checkout__form-label">
-                                            <input type="text" class="checkout__form-input" name="address" required=""
-                                                placeholder="Город, улица и дом">
+                                            <input type="text" class="checkout__form-input js-address-input"
+                                                name="address" required="" placeholder="Город, улица и дом">
                                             <span class="checkout__form-label-text">
                                                 Город, улица и дом
                                             </span>
                                         </label>
-                                        <button class="checkout__form-detect-address" type="button">
+                                        <button class="checkout__form-detect-address js-detect-location" type="button">
                                             <svg width="14" height="14" aria-hidden="true">
                                                 <use xlink:href="#location"></use>
                                             </svg>
@@ -93,7 +93,7 @@
                                     </div>
                                     <div class="checkout__form-field">
                                         <label class="checkout__form-label">
-                                            <input type="text" class="checkout__form-input" name="code" required=""
+                                            <input type="text" class="checkout__form-input" name="code"
                                                 placeholder="Код двери">
                                             <span class="checkout__form-label-text">
                                                 Код двери
@@ -102,7 +102,7 @@
                                     </div>
                                     <div class="checkout__form-field">
                                         <label class="checkout__form-label">
-                                            <input type="text" class="checkout__form-input" name="floor" required=""
+                                            <input type="text" class="checkout__form-input" name="floor"
                                                 placeholder="Этаж">
                                             <span class="checkout__form-label-text">
                                                 Этаж
@@ -111,7 +111,7 @@
                                     </div>
                                     <div class="checkout__form-field">
                                         <label class="checkout__form-label">
-                                            <input type="text" class="checkout__form-input" name="block" required=""
+                                            <input type="text" class="checkout__form-input" name="block"
                                                 placeholder="Подъезд">
                                             <span class="checkout__form-label-text">
                                                 Подъезд
@@ -120,7 +120,7 @@
                                     </div>
                                     <div class="checkout__form-field">
                                         <label class="checkout__form-label">
-                                            <input type="text" class="checkout__form-input" name="block" required=""
+                                            <input type="text" class="checkout__form-input" name="block"
                                                 placeholder="Подъезд">
                                             <span class="checkout__form-label-text">
                                                 Квартира
@@ -137,7 +137,8 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="checkout__form-map">
+                                <div class="checkout__form-map" data-center="55.796118, 49.106538" data-zoom="12"
+                                    data-pin-url="/images/pin.svg">
                                     <div class="checkout__form-map-element">
 
                                     </div>
@@ -157,7 +158,7 @@
                         <div class="checkout__payment-method-selection">
                             <label class="checkout__payment-method-radio">
                                 <input type="radio" name="payment" class="checkout__payment-method-radio-input"
-                                    value="Картой онлайн" checked="">
+                                    value="Картой онлайн" checked="" form="checkout-form">
                                 <span class="checkout__payment-method-radio-mark">
 
                                 </span>
@@ -167,7 +168,7 @@
                             </label>
                             <label class="checkout__payment-method-radio">
                                 <input type="radio" name="payment" class="checkout__payment-method-radio-input"
-                                    value="Картой курьеру">
+                                    value="Картой курьеру" form="checkout-form">
                                 <span class="checkout__payment-method-radio-mark">
 
                                 </span>
@@ -178,7 +179,7 @@
 
                             <label class="checkout__payment-method-radio">
                                 <input type="radio" name="payment" class="checkout__payment-method-radio-input"
-                                    value="Наличными">
+                                    value="Наличными" form="checkout-form">
                                 <span class="checkout__payment-method-radio-mark">
 
                                 </span>
@@ -277,7 +278,7 @@
                             </li>
                         </ul>
                         <div class="checkout__pay">
-                            <button class="checkout__pay-btn">
+                            <button class="checkout__pay-btn" form="checkout-form" type="submit">
                                 Оплатить
                             </button>
                             <div class="checkout__pay-price">

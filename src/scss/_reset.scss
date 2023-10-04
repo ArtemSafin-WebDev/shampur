@@ -210,8 +210,8 @@ select:-webkit-autofill:focus {
 .validation-error {
   font-size: 1.6rem;
   line-height: 140%;
-  margin-top: 1rem;
-  color: #f60a18;
+  margin-top: 0.5rem;
+  color: var(--primary-color);
   @include breakpoint(mobile) {
     font-size: 1.4rem;
     font-style: normal;

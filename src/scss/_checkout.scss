@@ -11,6 +11,8 @@
 
 .checkout__content {
   @include blockContent;
+  display: flex;
+  flex-direction: column;
 }
 
 .checkout__top-row {
@@ -74,6 +76,7 @@
   letter-spacing: -0.018rem;
   color: rgba(0, 0, 0, 0.5);
   transition: color 0.2s;
+  align-self: flex-start;
   &:link,
   &:visited {
     color: rgba(0, 0, 0, 0.5);
@@ -84,6 +87,15 @@
     height: 2.4rem;
     fill: rgba(0, 0, 0, 0.3);
     transition: fill 0.2s;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      color: var(--primary-color);
+      svg {
+        fill: var(--primary-color);
+      }
+    }
   }
 }
 
@@ -306,8 +318,13 @@
   border-radius: 1.2rem;
   border: 1px solid rgba(0, 0, 0, 0.2);
   color: black;
+  transition: border-color 0.2s;
   &::placeholder {
     opacity: 0;
+  }
+
+  &.not-valid {
+    border-color: var(--primary-color);
   }
 
   @include breakpoint(mobile) {
@@ -334,7 +351,7 @@
   letter-spacing: -0.018rem;
   color: rgba(0, 0, 0, 0.5);
   transition: transform 0.2s;
-  cursor: pointer;
+  pointer-events: none;
   transform-origin: left center;
 
   @include breakpoint(mobile) {
@@ -348,7 +365,7 @@
 
 .checkout__form-input:focus ~ .checkout__form-label-text,
 .checkout__form-input:not(:placeholder-shown) ~ .checkout__form-label-text {
-  transform: scale(0.6) translateY(-0.5rem);
+  transform: scale(0.6) translateY(-3.1rem);
 }
 
 .checkout__form-address-wrapper {
@@ -403,6 +420,8 @@
   top: 0;
   width: 100%;
   height: 100%;
+  background-color: #f2f2f2;
+  margin-top: 2rem;
 }
 
 .checkout__payment-method {
