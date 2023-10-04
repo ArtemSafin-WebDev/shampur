@@ -56,4 +56,24 @@ export default function stickyElements() {
       },
     });
   });
+
+  const checkoutSummary =
+    document.querySelector<HTMLElement>(".checkout__summary");
+
+  const rightCol = document.querySelector<HTMLElement>(".checkout__right-col");
+
+  if (rightCol && checkoutSummary) {
+    mm.add("(min-width: 641px)", () => {
+      ScrollTrigger.create({
+        trigger: rightCol,
+        start: "top top+=20",
+        end: () =>
+          `top+=${
+            rightCol.offsetHeight - checkoutSummary.offsetHeight
+          } top+=20`,
+        pin: checkoutSummary,
+        pinSpacing: false,
+      });
+    });
+  }
 }

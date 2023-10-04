@@ -65,128 +65,169 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="checkout__form-block">
-                            <button class="checkout__form-address-btn">
+                        <div class="checkout__form-block checkout__form-block--address">
+                            <h3 class="checkout__form-block-heading">
+                                Адрес доставки
+                            </h3>
+                            <button class="checkout__form-address-btn js-address-btn"
+                                data-placeholder="Выбрать адрес доставки">
                                 <span class="checkout__form-address-btn-text">
                                     Выбрать адрес доставки
                                 </span>
+
+                                <svg width="14" height="14" aria-hidden="true">
+                                    <use xlink:href="#checkout-arrow"></use>
+                                </svg>
                             </button>
                             <div class="checkout__form-address-wrapper">
-                                <h3 class="checkout__form-block-heading">
-                                    Адрес доставки
-                                </h3>
-                                <div class="checkout__form-fields">
-                                    <div class="checkout__form-field checkout__form-field--fullwidth">
-                                        <label class="checkout__form-label">
-                                            <input type="text" class="checkout__form-input js-address-input"
-                                                name="address" required="" placeholder="Город, улица и дом">
-                                            <span class="checkout__form-label-text">
-                                                Город, улица и дом
-                                            </span>
-                                        </label>
-                                        <button class="checkout__form-detect-address js-detect-location" type="button">
-                                            <svg width="14" height="14" aria-hidden="true">
-                                                <use xlink:href="#location"></use>
-                                            </svg>
-                                            Определить местоположение
-                                        </button>
+
+                                <div class="checkout__form-address-content-wrapper">
+                                    <h3 class="checkout__form-address-mobile-heading">
+                                        адрес доставки
+                                    </h3>
+
+                                    <div class="checkout__form-fields">
+                                        <div class="checkout__form-field checkout__form-field--fullwidth">
+                                            <label class="checkout__form-label">
+                                                <input type="text" class="checkout__form-input js-address-input"
+                                                    name="address" required="" placeholder="Город, улица и дом">
+                                                <span class="checkout__form-label-text">
+                                                    Город, улица и дом
+                                                </span>
+                                            </label>
+                                            <button class="checkout__form-detect-address js-detect-location"
+                                                type="button">
+                                                <svg width="14" height="14" aria-hidden="true">
+                                                    <use xlink:href="#location"></use>
+                                                </svg>
+                                                Определить местоположение
+                                            </button>
+                                        </div>
+                                        <div class="checkout__form-field">
+                                            <label class="checkout__form-label">
+                                                <input type="text" class="checkout__form-input" name="code"
+                                                    placeholder="Код двери">
+                                                <span class="checkout__form-label-text">
+                                                    Код двери
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="checkout__form-field">
+                                            <label class="checkout__form-label">
+                                                <input type="text" class="checkout__form-input" name="floor"
+                                                    placeholder="Этаж">
+                                                <span class="checkout__form-label-text">
+                                                    Этаж
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="checkout__form-field">
+                                            <label class="checkout__form-label">
+                                                <input type="text" class="checkout__form-input" name="block"
+                                                    placeholder="Подъезд">
+                                                <span class="checkout__form-label-text">
+                                                    Подъезд
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="checkout__form-field">
+                                            <label class="checkout__form-label">
+                                                <input type="text" class="checkout__form-input" name="block"
+                                                    placeholder="Подъезд">
+                                                <span class="checkout__form-label-text">
+                                                    Квартира
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="checkout__form-field checkout__form-field--fullwidth">
+                                            <label class="checkout__form-label">
+                                                <input type="text" class="checkout__form-input" name="comment"
+                                                    placeholder="Комментарий">
+                                                <span class="checkout__form-label-text">
+                                                    Комментарий
+                                                </span>
+                                            </label>
+                                        </div>
                                     </div>
-                                    <div class="checkout__form-field">
-                                        <label class="checkout__form-label">
-                                            <input type="text" class="checkout__form-input" name="code"
-                                                placeholder="Код двери">
-                                            <span class="checkout__form-label-text">
-                                                Код двери
-                                            </span>
-                                        </label>
-                                    </div>
-                                    <div class="checkout__form-field">
-                                        <label class="checkout__form-label">
-                                            <input type="text" class="checkout__form-input" name="floor"
-                                                placeholder="Этаж">
-                                            <span class="checkout__form-label-text">
-                                                Этаж
-                                            </span>
-                                        </label>
-                                    </div>
-                                    <div class="checkout__form-field">
-                                        <label class="checkout__form-label">
-                                            <input type="text" class="checkout__form-input" name="block"
-                                                placeholder="Подъезд">
-                                            <span class="checkout__form-label-text">
-                                                Подъезд
-                                            </span>
-                                        </label>
-                                    </div>
-                                    <div class="checkout__form-field">
-                                        <label class="checkout__form-label">
-                                            <input type="text" class="checkout__form-input" name="block"
-                                                placeholder="Подъезд">
-                                            <span class="checkout__form-label-text">
-                                                Квартира
-                                            </span>
-                                        </label>
-                                    </div>
-                                    <div class="checkout__form-field checkout__form-field--fullwidth">
-                                        <label class="checkout__form-label">
-                                            <input type="text" class="checkout__form-input" name="comment"
-                                                placeholder="Комментарий">
-                                            <span class="checkout__form-label-text">
-                                                Комментарий
-                                            </span>
-                                        </label>
-                                    </div>
+
+                                    <button class="checkout__form-address-mobile-close js-address-modal-close"
+                                        type="button">
+                                        Выбрать
+                                    </button>
                                 </div>
                                 <div class="checkout__form-map" data-center="55.796118, 49.106538" data-zoom="12"
                                     data-pin-url="/images/pin.svg">
                                     <div class="checkout__form-map-element">
 
                                     </div>
+                                    <button class="checkout__form-map-address-close-btn js-address-modal-close"
+                                        type="button">
+                                        <svg width="14" height="14" aria-hidden="true">
+                                            <use xlink:href="#address-close"></use>
+                                        </svg>
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </form>
                 </div>
                 <div class="checkout__payment-method">
-                    <button class="checkout__payment-method-btn">
+                    <h3 class="checkout__payment-method-heading">
+                        Способ оплаты
+                    </h3>
+                    <button class="checkout__payment-method-btn js-open-payment-btn">
+                        <span class="checkout__payment-method-btn-text">
 
+                        </span>
+                        <svg width="14" height="14" aria-hidden="true">
+                            <use xlink:href="#checkout-arrow"></use>
+                        </svg>
                     </button>
-                    <div class="checkout__payment-method-wrapper">
-                        <h3 class="checkout__payment-method-heading">
-                            Способ оплаты
-                        </h3>
-                        <div class="checkout__payment-method-selection">
-                            <label class="checkout__payment-method-radio">
-                                <input type="radio" name="payment" class="checkout__payment-method-radio-input"
-                                    value="Картой онлайн" checked="" form="checkout-form">
-                                <span class="checkout__payment-method-radio-mark">
 
-                                </span>
-                                <span class="checkout__payment-method-radio-text">
-                                    Картой онлайн
-                                </span>
-                            </label>
-                            <label class="checkout__payment-method-radio">
-                                <input type="radio" name="payment" class="checkout__payment-method-radio-input"
-                                    value="Картой курьеру" form="checkout-form">
-                                <span class="checkout__payment-method-radio-mark">
+                    <div class="checkout__payment-method-wrapper js-payment-wrapper">
+                        <div class="checkout__payment-method-wrapper-inner">
 
-                                </span>
-                                <span class="checkout__payment-method-radio-text">
-                                    Картой курьеру
-                                </span>
-                            </label>
 
-                            <label class="checkout__payment-method-radio">
-                                <input type="radio" name="payment" class="checkout__payment-method-radio-input"
-                                    value="Наличными" form="checkout-form">
-                                <span class="checkout__payment-method-radio-mark">
+                            <h3 class="checkout__payment-method-mobile-heading">
+                                Способ оплаты
+                            </h3>
+                            <div class="checkout__payment-method-selection">
+                                <label class="checkout__payment-method-radio">
+                                    <input type="radio" name="payment" class="checkout__payment-method-radio-input"
+                                        value="Картой онлайн" checked="" form="checkout-form">
+                                    <span class="checkout__payment-method-radio-mark">
 
-                                </span>
-                                <span class="checkout__payment-method-radio-text">
-                                    Наличными
-                                </span>
-                            </label>
+                                    </span>
+                                    <span class="checkout__payment-method-radio-text">
+                                        Картой онлайн
+                                    </span>
+                                </label>
+                                <label class="checkout__payment-method-radio">
+                                    <input type="radio" name="payment" class="checkout__payment-method-radio-input"
+                                        value="Картой курьеру" form="checkout-form">
+                                    <span class="checkout__payment-method-radio-mark">
+
+                                    </span>
+                                    <span class="checkout__payment-method-radio-text">
+                                        Картой курьеру
+                                    </span>
+                                </label>
+
+                                <label class="checkout__payment-method-radio">
+                                    <input type="radio" name="payment" class="checkout__payment-method-radio-input"
+                                        value="Наличными" form="checkout-form">
+                                    <span class="checkout__payment-method-radio-mark">
+
+                                    </span>
+                                    <span class="checkout__payment-method-radio-text">
+                                        Наличными
+                                    </span>
+                                </label>
+                            </div>
+                            <button class="checkout__payment-method-mobile-close js-close-payment-btn" type="button">
+                                Выбрать
+                            </button>
+
                         </div>
                     </div>
 

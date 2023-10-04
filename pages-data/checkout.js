@@ -3,6 +3,7 @@ const checkout = {
     title: "Оформление заказа",
     noHeaderTicker: true,
     hasBackBtn: true,
+    onlyDesktopFooter: true,
   },
 };
 

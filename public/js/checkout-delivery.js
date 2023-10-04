@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
         size: "small",
         position: {
           right: 10,
-          bottom: 40,
+          bottom: 48,
         },
       },
     });
@@ -70,7 +70,28 @@ document.addEventListener("DOMContentLoaded", () => {
       };
 
       objectManager.add(objectToAdd);
+
+      map.panTo(coords);
     };
+
+    addressInput.addEventListener("change", () => {
+      const value = addressInput.value.trim();
+      if (!value) return;
+
+      const myGeocoder = ymaps.geocode(value, {
+        results: 1,
+      });
+
+      myGeocoder
+        .then((res) => {
+          const result = res?.geoObjects?.get(0);
+          if (!result) return;
+
+          const coords = result.geometry.getCoordinates();
+          putPlacemark(coords);
+        })
+        .catch((err) => console.error(err));
+    });
 
     if ("geolocation" in navigator) {
       detectLocation.style.display = "";

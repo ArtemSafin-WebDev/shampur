@@ -2,6 +2,12 @@
   display: block;
 }
 
+.page-footer--only-desktop {
+  @include breakpoint(mobile) {
+    display: none;
+  }
+}
+
 .page-footer__wrapper {
   @include blockWrapper;
   padding: 3.2rem 0;
