@@ -14,6 +14,10 @@
   backface-visibility: hidden;
   transform: translateZ(0);
 
+  body:not(.loaded) & {
+    display: none;
+  }
+
   @include breakpointMF(small-tablet) {
     width: 100svw;
   }

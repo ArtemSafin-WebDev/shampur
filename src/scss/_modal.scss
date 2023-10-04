@@ -15,6 +15,10 @@
   transition: opacity 0.4s, visibility 0s linear 0.4s;
   padding: var(--content-padding);
 
+  body:not(.loaded) & {
+    display: none;
+  }
+
   @include breakpointMF(small-tablet) {
     width: 100svw;
   }

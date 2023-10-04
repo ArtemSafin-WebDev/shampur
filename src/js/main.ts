@@ -12,11 +12,11 @@ import smoothScrolling from "./smoothScrolling";
 import stickyElements from "./stickyElements";
 import nav from "./nav";
 import selects from "./selects";
+import lazyloading from "./lazyloading";
 
-document.addEventListener("DOMContentLoaded", () => {});
-
-window.addEventListener("load", () => {
+document.addEventListener("DOMContentLoaded", () => {
   smoothScrolling();
+  lazyloading();
   ticker();
   promo();
   map();
@@ -28,4 +28,8 @@ window.addEventListener("load", () => {
   menu();
   stickyElements();
   nav();
+});
+
+window.addEventListener("load", () => {
+  document.body.classList.add("loaded");
 });

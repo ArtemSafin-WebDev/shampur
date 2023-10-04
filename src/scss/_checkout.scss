@@ -2,6 +2,11 @@
   @include blockWrapper;
   padding-top: 3.2rem;
   padding-bottom: 8rem;
+
+  @include breakpoint(mobile) {
+    padding-top: 2.8rem;
+    padding-bottom: 0;
+  }
 }
 
 .checkout__content {
@@ -11,6 +16,11 @@
 .checkout__top-row {
   display: flex;
   align-items: center;
+  margin-bottom: 5rem;
+
+  @include breakpoint(mobile) {
+    display: none;
+  }
 }
 
 .checkout__logo {
@@ -85,6 +95,17 @@
   letter-spacing: -0.06rem;
   text-transform: uppercase;
   margin-bottom: 5.8rem;
+  font-family: var(--roboto-flex);
+  @include breakpoint(mobile) {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%;
+    letter-spacing: -0.02rem;
+    text-transform: uppercase;
+    padding: 0 1.2rem;
+    margin-bottom: 2.8rem;
+  }
 }
 
 .checkout__layout {
@@ -92,6 +113,12 @@
   grid-template-columns: 1fr 55rem;
   grid-gap: 11rem;
   grid-template-areas: "left right";
+
+  @include breakpoint(mobile) {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 2.4rem;
+  }
 }
 
 .checkout__left-col {
@@ -100,6 +127,16 @@
   flex-direction: column;
   gap: 4rem;
   grid-area: left;
+
+  @include breakpoint(mobile) {
+    gap: 0;
+    border-radius: 2rem;
+    background: white;
+    margin: 0 calc(-1 * var(--content-padding));
+    padding: 0 calc(var(--content-padding) + 1.2rem);
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
 }
 
 .checkout__right-col {
@@ -107,9 +144,11 @@
 }
 
 .checkout__main-block {
-  background-color: #fff;
-  border-radius: 3.2rem;
-  padding: 6rem;
+  @include breakpointMF(small-tablet) {
+    background-color: #fff;
+    border-radius: 3.2rem;
+    padding: 6rem;
+  }
 }
 
 .checkout__links {
@@ -120,6 +159,12 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-gap: 2rem;
+
+  @include breakpoint(mobile) {
+    padding: 0.6rem;
+    border-radius: 1.2rem;
+    margin-bottom: 4rem;
+  }
 }
 
 .checkout__link {
@@ -136,7 +181,7 @@
   font-family: var(--roboto-flex);
   border-radius: 1rem;
   transition: color 0.2s, background-color 0.2s;
-
+  padding: 2.6rem;
   svg {
     width: 2.4rem;
     height: 2.4rem;
@@ -146,17 +191,44 @@
   &.active {
     background: white;
   }
+
+  @include breakpoint(mobile) {
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%;
+    letter-spacing: -0.012rem;
+    text-transform: uppercase;
+    gap: 0.8rem;
+    border-radius: 0.8rem;
+
+    svg {
+      width: 1.8rem;
+      height: 1.8rem;
+    }
+  }
 }
 
 .checkout__form {
   display: flex;
   flex-direction: column;
   gap: 6rem;
+
+  @include breakpoint(mobile) {
+    gap: 0;
+  }
 }
 
 .checkout__form-block {
   display: flex;
   flex-direction: column;
+
+  @include breakpoint(mobile) {
+    margin-bottom: 4rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .checkout__form-block-heading {
@@ -168,20 +240,51 @@
   text-transform: uppercase;
   font-family: var(--roboto-flex);
   margin-bottom: 3.2rem;
+
+  @include breakpoint(mobile) {
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%;
+    letter-spacing: -0.028rem;
+    text-transform: uppercase;
+    margin-bottom: 1.8rem;
+  }
 }
 
 .checkout__form-fields {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   grid-gap: 2rem;
+
+  @include breakpoint(mobile) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.8rem;
+  }
 }
 
 .checkout__form-field {
   display: flex;
   flex-direction: column;
 
-  &--half {
-    grid-column: span 2;
+  @include breakpointMF(small-tablet) {
+    &--half {
+      grid-column: span 2;
+    }
+
+    &--fullwidth {
+      grid-column: span 4;
+    }
+  }
+
+  @include breakpoint(mobile) {
+    &--half {
+      grid-column: 1 / -1;
+    }
+
+    &--fullwidth {
+      grid-column: 1 / -1;
+    }
   }
 }
 
@@ -206,6 +309,18 @@
   &::placeholder {
     opacity: 0;
   }
+
+  @include breakpoint(mobile) {
+    border-radius: 1.2rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    height: 5rem;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: -0.014rem;
+    padding: 0 1.2rem;
+  }
 }
 
 .checkout__form-label-text {
@@ -221,6 +336,14 @@
   transition: transform 0.2s;
   cursor: pointer;
   transform-origin: left center;
+
+  @include breakpoint(mobile) {
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: -0.014rem;
+  }
 }
 
 .checkout__form-input:focus ~ .checkout__form-label-text,
@@ -253,6 +376,10 @@
     height: 2.4rem;
     fill: currentColor;
   }
+
+  @include breakpoint(mobile) {
+    display: none;
+  }
 }
 
 .checkout__form-map {
@@ -263,6 +390,10 @@
     content: "";
     display: block;
     padding-bottom: 50%;
+  }
+
+  @include breakpoint(mobile) {
+    border-radius: 0;
   }
 }
 
@@ -275,9 +406,11 @@
 }
 
 .checkout__payment-method {
-  border-radius: 3.2rem;
-  background: white;
-  padding: 6rem;
+  @include breakpointMF(small-tablet) {
+    border-radius: 3.2rem;
+    background: white;
+    padding: 6rem;
+  }
 }
 
 .checkout__payment-method-btn {
@@ -297,12 +430,26 @@
   font-family: var(--roboto-flex);
   text-transform: uppercase;
   margin-bottom: 3.2rem;
+
+  @include breakpoint(mobile) {
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%;
+    letter-spacing: -0.028rem;
+    text-transform: uppercase;
+    margin-bottom: 2.4rem;
+  }
 }
 
 .checkout__payment-method-selection {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
+  @include breakpoint(mobile) {
+    gap: 2.4rem;
+  }
 }
 
 .checkout__payment-method-radio {
@@ -336,6 +483,16 @@
     border-radius: 50%;
     transition: opacity 0.2s;
   }
+
+  @include breakpoint(mobile) {
+    width: 2rem;
+    height: 2rem;
+
+    &::before {
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+  }
 }
 
 .checkout__payment-method-radio-text {
@@ -344,6 +501,14 @@
   font-weight: 400;
   line-height: 100%;
   letter-spacing: -0.018rem;
+
+  @include breakpoint(mobile) {
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -0.014rem;
+  }
 }
 
 .checkout__payment-method-radio-input:checked
@@ -355,9 +520,20 @@
 }
 
 .checkout__summary {
-  padding: 6rem;
-  border-radius: 3.2rem;
-  background: white;
+  @include breakpointMF(small-tablet) {
+    padding: 6rem;
+    border-radius: 3.2rem;
+    background: white;
+  }
+
+  @include breakpoint(mobile) {
+    margin: 0 calc(-1 * var(--content-padding));
+    padding: 0 calc(var(--content-padding) + 1.2rem);
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+    border-radius: 1.6rem 1.6rem 0px 0px;
+    background-color: #fff;
+  }
 }
 
 .checkout__summary-heading {
@@ -371,6 +547,10 @@
   margin-bottom: 2.4rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   font-family: var(--roboto-flex);
+
+  @include breakpoint(mobile) {
+    display: none;
+  }
 }
 
 .checkout__summary-list {
@@ -380,6 +560,10 @@
   padding-bottom: 2.4rem;
   margin-bottom: 2.4rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  @include breakpoint(mobile) {
+    display: none;
+  }
 }
 
 .checkout__summary-card {
@@ -404,6 +588,7 @@
   line-height: 120%;
   letter-spacing: -0.014rem;
   text-transform: uppercase;
+  font-family: var(--roboto-flex);
 }
 
 .checkout__summary-card-title {
@@ -423,6 +608,7 @@
   line-height: 100%;
   letter-spacing: -0.011rem;
   color: rgba(0, 0, 0, 0.5);
+  max-width: 22rem;
 }
 
 .checkout__total-list {
@@ -430,6 +616,10 @@
   flex-direction: column;
   gap: 1.2rem;
   margin-bottom: 3.2rem;
+
+  @include breakpoint(mobile) {
+    margin-bottom: 2.4rem;
+  }
 }
 
 .checkout__total-card {
@@ -442,12 +632,24 @@
   font-weight: 400;
   line-height: 100%;
   letter-spacing: -0.014rem;
+
+  @include breakpoint(mobile) {
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -0.014rem;
+  }
 }
 
 .checkout__pay {
   display: flex;
   align-items: center;
   gap: 4rem;
+
+  @include breakpoint(mobile) {
+    gap: 3.2rem;
+  }
 }
 
 .checkout__pay-btn {
@@ -463,6 +665,18 @@
   color: white;
   border-radius: 0.8rem;
   padding: 1.9rem;
+  flex-grow: 1;
+  font-family: var(--roboto-flex);
+
+  @include breakpoint(mobile) {
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: -0.013rem;
+    text-transform: uppercase;
+    padding: 2.1rem;
+  }
 }
 
 .checkout__pay-price {
@@ -475,4 +689,13 @@
   text-align: right;
   white-space: nowrap;
   font-family: var(--roboto-flex);
+
+  @include breakpoint(mobile) {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%;
+    letter-spacing: -0.016rem;
+    text-transform: uppercase;
+  }
 }
