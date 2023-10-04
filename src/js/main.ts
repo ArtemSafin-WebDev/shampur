@@ -15,6 +15,7 @@ import selects from "./selects";
 import lazyloading from "./lazyloading";
 import checkoutForm from "./checkoutForm";
 import checkoutDelivery from "./checkoutDelivery";
+import checkoutPickup from "./checkoutPickup";
 
 document.addEventListener("DOMContentLoaded", () => {
   smoothScrolling();
@@ -31,6 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
   stickyElements();
   nav();
   checkoutDelivery();
+  checkoutPickup();
   checkoutForm();
 });
 

@@ -1,0 +1,364 @@
+<section class="checkout js-checkout-pickup">
+    <div class="checkout__content">
+        <div class="checkout__top-row">
+            <a href="#" class="checkout__logo">
+                <img src="/images/logo.webp" alt="" class="checkout__logo-image">
+                <div class="checkout__logo-content">
+                    <div class="checkout__logo-name">
+                        Шампур
+                    </div>
+                    <div class="checkout__logo-city">
+                        Казань
+                    </div>
+                </div>
+            </a>
+        </div>
+        <a href="#" class="checkout__back-link">
+            <svg width="14" height="14" aria-hidden="true">
+                <use xlink:href="#back-link"></use>
+            </svg>
+            Назад
+        </a>
+        <h1 class="checkout__heading">
+            оформление заказа
+        </h1>
+        <div class="checkout__layout">
+            <div class="checkout__left-col">
+                <div class="checkout__main-block">
+                    <div class="checkout__links">
+                        <a href="#" class="checkout__link">
+                            <svg width="14" height="14" aria-hidden="true">
+                                <use xlink:href="#car"></use>
+                            </svg>
+                            Доставка
+                        </a>
+                        <a href="#" class="checkout__link active">
+                            <svg width="14" height="14" aria-hidden="true">
+                                <use xlink:href="#place"></use>
+                            </svg>
+                            Самовывоз
+                        </a>
+                    </div>
+                    <form action="/" method="POST" class="checkout__form js-checkout-form" id="checkout-form">
+                        <div class="checkout__form-block">
+                            <h3 class="checkout__form-block-heading">
+                                Данные для самовывоза
+                            </h3>
+                            <div class="checkout__form-fields">
+                                <div class="checkout__form-field checkout__form-field--half">
+                                    <label class="checkout__form-label">
+                                        <input type="text" class="checkout__form-input" name="name" required=""
+                                            placeholder="Имя">
+                                        <span class="checkout__form-label-text">
+                                            Имя
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="checkout__form-field checkout__form-field--half">
+                                    <label class="checkout__form-label">
+                                        <input type="tel" class="checkout__form-input" name="phone" required=""
+                                            placeholder="Телефон">
+                                        <span class="checkout__form-label-text">
+                                            Телефон
+                                        </span>
+                                    </label>
+                                </div>
+                                <div
+                                    class="checkout__form-field checkout__form-field--address checkout__form-field--fullwidth">
+                                    <div class="checkout__form-address">
+                                        <label class="checkout__form-label">
+                                            <input type="text" class="checkout__form-input js-address-input"
+                                                name="address" placeholder="Адрес" readonly="">
+                                            <span class="checkout__form-label-text">
+                                                Адрес
+                                            </span>
+                                        </label>
+                                        <button class="checkout__form-address-change js-pickup-modal-open"
+                                            type="button">
+                                            Изменить
+                                        </button>
+                                        <h3 class="checkout__form-address-mobile-heading">
+                                            адрес доставки
+                                        </h3>
+                                        <button class="checkout__form-address-mobile-btn js-pickup-modal-open">
+                                            <span class="checkout__form-address-mobile-btn-content">
+                                                <span class="checkout__form-address-mobile-btn-title">
+
+                                                </span>
+                                                <span class="checkout__form-address-mobile-btn-schedule">
+
+                                                </span>
+                                            </span>
+                                            <svg width="14" height="14" aria-hidden="true">
+                                                <use xlink:href="#checkout-arrow"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="checkout__form-pickup-modal js-pickup-modal">
+                                            <div class="checkout__form-pickup-modal-inner">
+                                                <button class="checkout__form-pickup-modal-close js-pickup-modal-close">
+                                                    <svg width="14" height="14" aria-hidden="true">
+                                                        <use xlink:href="#close"></use>
+                                                    </svg>
+
+                                                    <svg width="14" height="14" aria-hidden="true">
+                                                        <use xlink:href="#address-close"></use>
+                                                    </svg>
+                                                </button>
+                                                <div class="checkout__form-pickup-modal-row">
+                                                    <div class="checkout__form-pickup-modal-text-content">
+                                                        <h3 class="checkout__form-pickup-modal-heading">
+                                                            Адреса самовывоза
+                                                        </h3>
+                                                        <div class="checkout__form-pickup-modal-radios">
+                                                            <label class="checkout__form-pickup-modal-radio">
+                                                                <input type="radio" name="pickup-point"
+                                                                    class="checkout__form-pickup-modal-radio-input"
+                                                                    value="ул. Кул Гали, 8" checked=""
+                                                                    data-coords="55.751695, 49.227399">
+                                                                <span class="checkout__form-pickup-modal-radio-mark">
+
+                                                                </span>
+                                                                <span class="checkout__form-pickup-modal-radio-content">
+                                                                    <span
+                                                                        class="checkout__form-pickup-modal-radio-text">
+                                                                        ул. Кул Гали, 8
+                                                                    </span>
+                                                                    <span
+                                                                        class="checkout__form-pickup-modal-radio-schedule">
+                                                                        9:00 — 22:00
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                            <label class="checkout__form-pickup-modal-radio">
+                                                                <input type="radio" name="pickup-point"
+                                                                    class="checkout__form-pickup-modal-radio-input"
+                                                                    value="ул. Академика Арбузова, 5 к1"
+                                                                    data-coords="55.814462, 49.188053">
+                                                                <span class="checkout__form-pickup-modal-radio-mark">
+
+                                                                </span>
+                                                                <span class="checkout__form-pickup-modal-radio-content">
+                                                                    <span
+                                                                        class="checkout__form-pickup-modal-radio-text">
+                                                                        ул. Академика Арбузова, 5 к1
+                                                                    </span>
+                                                                    <span
+                                                                        class="checkout__form-pickup-modal-radio-schedule">
+                                                                        9:00 — 22:00
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                            <label class="checkout__form-pickup-modal-radio">
+                                                                <input type="radio" name="pickup-point"
+                                                                    class="checkout__form-pickup-modal-radio-input"
+                                                                    value="ул. Горсоветская 10"
+                                                                    data-coords="55.819034, 49.087711">
+                                                                <span class="checkout__form-pickup-modal-radio-mark">
+
+                                                                </span>
+                                                                <span class="checkout__form-pickup-modal-radio-content">
+                                                                    <span
+                                                                        class="checkout__form-pickup-modal-radio-text">
+                                                                        ул. Горсоветская 10
+                                                                    </span>
+                                                                    <span
+                                                                        class="checkout__form-pickup-modal-radio-schedule">
+                                                                        9:00 — 22:00
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                        <button
+                                                            class="checkout__form-pickup-modal-confirm js-pickup-modal-close"
+                                                            type="button">
+                                                            подтвердить
+                                                        </button>
+                                                    </div>
+                                                    <div class="checkout__form-pickup-modal-map-wrapper"
+                                                        data-center="55.796118, 49.106538" data-zoom="12"
+                                                        data-pin-url="/images/pin.svg">
+                                                        <div class="checkout__form-pickup-modal-map">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="checkout__form-field checkout__form-field--fullwidth">
+                                    <label class="checkout__form-label">
+                                        <input type="text" class="checkout__form-input" name="comment"
+                                            placeholder="Комментарий">
+                                        <span class="checkout__form-label-text">
+                                            Комментарий
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="checkout__payment-method">
+                    <h3 class="checkout__payment-method-heading">
+                        Способ оплаты
+                    </h3>
+                    <button class="checkout__payment-method-btn js-open-payment-btn">
+                        <span class="checkout__payment-method-btn-text">
+
+                        </span>
+                        <svg width="14" height="14" aria-hidden="true">
+                            <use xlink:href="#checkout-arrow"></use>
+                        </svg>
+                    </button>
+
+                    <div class="checkout__payment-method-wrapper js-payment-wrapper">
+                        <div class="checkout__payment-method-wrapper-inner">
+
+
+                            <h3 class="checkout__payment-method-mobile-heading">
+                                Способ оплаты
+                            </h3>
+                            <div class="checkout__payment-method-selection">
+                                <label class="checkout__payment-method-radio">
+                                    <input type="radio" name="payment" class="checkout__payment-method-radio-input"
+                                        value="Картой онлайн" checked="" form="checkout-form">
+                                    <span class="checkout__payment-method-radio-mark">
+
+                                    </span>
+                                    <span class="checkout__payment-method-radio-text">
+                                        Картой онлайн
+                                    </span>
+                                </label>
+                                <label class="checkout__payment-method-radio">
+                                    <input type="radio" name="payment" class="checkout__payment-method-radio-input"
+                                        value="Картой курьеру" form="checkout-form">
+                                    <span class="checkout__payment-method-radio-mark">
+
+                                    </span>
+                                    <span class="checkout__payment-method-radio-text">
+                                        Картой курьеру
+                                    </span>
+                                </label>
+
+                                <label class="checkout__payment-method-radio">
+                                    <input type="radio" name="payment" class="checkout__payment-method-radio-input"
+                                        value="Наличными" form="checkout-form">
+                                    <span class="checkout__payment-method-radio-mark">
+
+                                    </span>
+                                    <span class="checkout__payment-method-radio-text">
+                                        Наличными
+                                    </span>
+                                </label>
+                            </div>
+                            <button class="checkout__payment-method-mobile-close js-close-payment-btn" type="button">
+                                Выбрать
+                            </button>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="checkout__right-col">
+                <div class="checkout__summary">
+                    <h2 class="checkout__summary-heading">
+                        Состав заказа
+                    </h2>
+                    <ul class="checkout__summary-list">
+                        <li class="checkout__summary-list-item">
+                            <div class="checkout__summary-card">
+                                <div class="checkout__summary-card-content">
+                                    <h3 class="checkout__summary-card-title">
+                                        Картофель фри
+                                    </h3>
+                                    <div class="checkout__summary-card-desc">
+                                        Соус сырный
+                                    </div>
+                                </div>
+                                <div class="checkout__summary-summary-card-price">
+                                    199 ₽
+                                </div>
+                            </div>
+                        </li>
+                        <li class="checkout__summary-list-item">
+                            <div class="checkout__summary-card">
+                                <div class="checkout__summary-card-content">
+                                    <h3 class="checkout__summary-card-title">
+                                        Классическая шаурма
+                                    </h3>
+                                    <div class="checkout__summary-card-desc">
+                                        С курицей, стандартная, соус фирменный, Сыр, халапеньо, Без лука
+                                    </div>
+                                </div>
+                                <div class="checkout__summary-summary-card-price">
+                                    199 ₽
+                                </div>
+                            </div>
+                        </li>
+                        <li class="checkout__summary-list-item">
+                            <div class="checkout__summary-card">
+                                <div class="checkout__summary-card-content">
+                                    <h3 class="checkout__summary-card-title">
+                                        комбо с шашлыком и курицей
+                                    </h3>
+                                    <div class="checkout__summary-card-desc">
+                                        Без соуса
+                                    </div>
+                                </div>
+                                <div class="checkout__summary-summary-card-price">
+                                    799 ₽
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="checkout__total">
+                        <ul class="checkout__total-list">
+                            <li class="checkout__total-list-item">
+                                <div class="checkout__total-card">
+                                    <div class="checkout__total-card-key">
+                                        3 товара
+                                    </div>
+                                    <div class="checkout__total-card-value">
+                                        2 599 ₽
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="checkout__total-list-item">
+                                <div class="checkout__total-card">
+                                    <div class="checkout__total-card-key">
+                                        Время доставки
+                                    </div>
+                                    <div class="checkout__total-card-value">
+                                        30-60 мин
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="checkout__total-list-item">
+                                <div class="checkout__total-card">
+                                    <div class="checkout__total-card-key">
+                                        Доставка
+                                    </div>
+                                    <div class="checkout__total-card-value">
+                                        Бесплатно
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="checkout__pay">
+                            <button class="checkout__pay-btn" form="checkout-form" type="submit">
+                                Оплатить
+                            </button>
+                            <div class="checkout__pay-price">
+                                2 599 ₽
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    {{> meta }}
+  </head>
+
+  <body>
+    {{> header }}
+    <main class="page-main">
+      {{> checkout-pickup }}
+    </main>
+    {{> footer }}
+    {{> modals }}
+    {{> cart }}
+
+    <script type="module" src="/src/js/main.ts"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=f020dcc6-3b22-49cb-a6b3-dfe7d3191095
+&lang=ru_RU" type="text/javascript"></script>
+    <script src="/js/checkout-pickup.js"></script>
+  </body>
+
+</html>
