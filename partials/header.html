@@ -1,0 +1,160 @@
+{{#unless noHeaderTicker}}
+    <div class="top-ticker js-ticker {{#if headerTickerOnlyMobile}} top-ticker--only-mobile {{/if}}">
+        <div class="top-ticker__content">
+            <div class="top-ticker__wrapper js-ticker-track">
+                <div class="top-ticker__items js-ticker-inner-track">
+                    <div class="top-ticker__item">
+                        <img src="/images/ticker/fire.svg" alt="" class="top-ticker__item-icon">
+                        Готовим на углях
+                    </div>
+                    <div class="top-ticker__item">
+                        <img src="/images/ticker/smile.svg" alt="" class="top-ticker__item-icon">
+                        Бесплатная доставка от 1000 ₽
+                    </div>
+                    <div class="top-ticker__item">
+                        <img src="/images/ticker/coffee.svg" alt="" class="top-ticker__item-icon">
+                        120+ продуктов
+                    </div>
+                    <div class="top-ticker__item">
+                        <img src="/images/ticker/person.svg" alt="" class="top-ticker__item-icon">
+                        Быстрая доставка по Казани
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{{/unless}}
+
+<header class="page-header">
+    <div class="page-header__content">
+        {{#if hasBackBtn}}
+            <a class="page-header__header-back js-close-cart" href="/">
+                <svg width="14" height="14" aria-hidden="true">
+                    <use xlink:href="#back-arrow"></use>
+                </svg>
+            </a>
+        {{/if}}
+        <a href="/" class="page-header__logo">
+            <img src="/images/logo.webp" alt="" class="page-header__logo-image">
+            <div class="page-header__logo-content">
+                <div class="page-header__logo-name">
+                    Шампур
+                </div>
+                <div class="page-header__logo-city">
+                    <svg width="14" height="14" aria-hidden="true">
+                        <use xlink:href="#location"></use>
+                    </svg>
+                    Казань
+                </div>
+            </div>
+        </a>
+
+        <button class="page-header__burger js-open-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+
+<div class="mobile-menu">
+    <div class="mobile-menu__header">
+        <div class="mobile-menu__header-content">
+            <a href="/" class="mobile-menu__header-logo">
+                <img src="/images/logo.webp" alt="" class="mobile-menu__header-logo-image">
+                <div class="mobile-menu__header-logo-content">
+                    <div class="mobile-menu__header-logo-name">
+                        Шампур
+                    </div>
+                    <div class="mobile-menu__header-logo-city">
+                        <svg width="14" height="14" aria-hidden="true">
+                            <use xlink:href="#location"></use>
+                        </svg>
+                        Казань
+                    </div>
+                </div>
+            </a>
+
+            <button class="mobile-menu__header-burger js-close-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+    <div class="mobile-menu__inner">
+        <nav class="mobile-menu__nav">
+            <ul class="mobile-menu__nav-list">
+                <li class="mobile-menu__nav-list-item">
+                    <a href="#menu" class="mobile-menu__nav-link js-anchor">
+                        меню
+                    </a>
+                </li>
+                <li class="mobile-menu__nav-list-item">
+                    <a href="#" class="mobile-menu__nav-link js-open-cart">
+                        корзина
+                    </a>
+                </li>
+                <li class="mobile-menu__nav-list-item">
+                    <a href="checkout.html" class="mobile-menu__nav-link">
+                        доставка и оплата
+                    </a>
+                </li>
+                <li class="mobile-menu__nav-list-item">
+                    <a href="#promo" class="mobile-menu__nav-link js-anchor">
+                        акции
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+        <div class="mobile-menu__schedule">
+            <h3 class="mobile-menu__schedule-heading">
+                Режим работы:
+            </h3>
+            <div class="mobile-menu__schedule-text">
+                10:00—22:30
+            </div>
+        </div>
+        <div class="mobile-menu__contacts">
+            <h3 class="mobile-menu__contacts-heading">
+                Контакты:
+            </h3>
+            <ul class="mobile-menu__contacts-list">
+                <li class="mobile-menu__contacts-list-item">
+                    <a href="tel:+79274554854" class="mobile-menu__contacts-link">
+                        8 (927) 455-48-54
+                    </a>
+                </li>
+                <li class="mobile-menu__contacts-list-item">
+                    <a href="mailto: shampurio@shampur.ru"
+                        class="mobile-menu__contacts-link mobile-menu__contacts-link--small">
+                        shampurio@shampur.ru
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile-menu__addresses">
+            <h3 class="mobile-menu__addresses-heading">
+                Наши адреса:
+            </h3>
+            <ul class="mobile-menu__addresses-list">
+                <li class="mobile-menu__addresses-list-item">
+                    <a href="#" class="mobile-menu__addresses-link">
+                        ул. Кул Гали, 8
+                    </a>
+                </li>
+                <li class="mobile-menu__addresses-list-item">
+                    <a href="#" class="mobile-menu__addresses-link">
+                        ул. Горсоветская 10
+                    </a>
+                </li>
+                <li class="mobile-menu__addresses-list-item">
+                    <a href="#" class="mobile-menu__addresses-link">
+                        ул. Академика Арбузова, 5 к1
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

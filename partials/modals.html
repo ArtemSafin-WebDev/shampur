@@ -1,0 +1,1628 @@
+<div class="modal js-modal" id="shawarma-modal">
+    <div class="modal__inner">
+        <button class="modal__close js-close-modal">
+            <svg width="14" height="14" aria-hidden="true">
+                <use xlink:href="#close"></use>
+            </svg>
+        </button>
+        <div class="modal__product">
+            <div class="modal__product-left-col">
+                <div class="modal__product-image-wrapper">
+                    <img src="/images/modals/shawarma.webp" alt="" class="modal__product-image" loading="lazy">
+                </div>
+            </div>
+            <div class="modal__product-right-col">
+                <form action="/" class="modal__product-form">
+                    <div class="modal__product-content">
+                        <div class="modal__product-content-inner" data-lenis-prevent="">
+                            <h3 class="modal__product-heading">
+                                Классическая шаурма
+                            </h3>
+                            <div class="modal__product-ingredients">
+                                Мясо, капустный салат, огурцы, <label class="modal__product-ingredients-remove">
+                                    <input type="checkbox" name="remove-tomato" value="Y"
+                                        class="modal__product-ingredients-remove-input" />
+                                    <span class="modal__product-ingredients-remove-text">помидоры</span>
+                                    <span class="modal__product-ingredients-remove-icon">
+                                        <svg width="14" height="14" aria-hidden="true">
+                                            <use xlink:href="#remove-ingredient"></use>
+                                        </svg>
+                                    </span>
+                                </label>, <label class="modal__product-ingredients-remove">
+                                    <input type="checkbox" name="remove-onion" value="Y"
+                                        class="modal__product-ingredients-remove-input" />
+                                    <span class="modal__product-ingredients-remove-text">лук</span>
+                                    <span class="modal__product-ingredients-remove-icon">
+                                        <svg width="14" height="14" aria-hidden="true">
+                                            <use xlink:href="#remove-ingredient"></use>
+                                        </svg>
+                                    </span>
+                                </label>, соус фирменный
+                            </div>
+                            <div class="modal__product-variants">
+                                <div class="modal__product-variants-choices">
+                                    <ul class="modal__product-variants-choices-list">
+                                        <li class="modal__product-variants-choices-list-item">
+                                            <label class="modal__product-variants-choices-label">
+                                                <input class="modal__product-variants-choices-input" name="meat"
+                                                    type="radio" checked="" value="chicken" />
+                                                <span class="modal__product-variants-choices-text">
+                                                    Курица
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="modal__product-variants-choices-list-item">
+                                            <label class="modal__product-variants-choices-label">
+                                                <input class="modal__product-variants-choices-input" name="meat"
+                                                    type="radio" value="turkey" />
+                                                <span class="modal__product-variants-choices-text">
+                                                    Индейка
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="modal__product-variants-choices-list-item">
+                                            <label class="modal__product-variants-choices-label">
+                                                <input class="modal__product-variants-choices-input" name="meat"
+                                                    type="radio" value="pork" />
+                                                <span class="modal__product-variants-choices-text">
+                                                    Свинина
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="modal__product-variants-choices-list-item">
+                                            <label class="modal__product-variants-choices-label">
+                                                <input class="modal__product-variants-choices-input" name="meat"
+                                                    type="radio" value="lula" />
+                                                <span class="modal__product-variants-choices-text">
+                                                    Люля
+                                                </span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="modal__product-variants-choices">
+                                    <ul class="modal__product-variants-choices-list">
+                                        <li class="modal__product-variants-choices-list-item">
+                                            <label class="modal__product-variants-choices-label">
+                                                <input class="modal__product-variants-choices-input" name="size"
+                                                    type="radio" checked="" value="standard" />
+                                                <span class="modal__product-variants-choices-text">
+                                                    Стандартная
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="modal__product-variants-choices-list-item">
+                                            <label class="modal__product-variants-choices-label">
+                                                <input class="modal__product-variants-choices-input" name="size"
+                                                    type="radio" value="big" />
+                                                <span class="modal__product-variants-choices-text">
+                                                    большая
+                                                </span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="modal__product-extra">
+                                <div class="modal__product-extra-block">
+                                    <h3 class="modal__product-extra-heading">
+                                        изменить соус
+                                    </h3>
+                                    <ul class="modal__product-extra-list">
+                                        <li class="modal__product-extra-list-item">
+                                            <label class="modal__product-extra-checkbox">
+                                                <input type="radio" name="extra" value="Соус фирменный"
+                                                    class="modal__product-extra-checkbox-input" checked="">
+                                                <span class="modal__product-extra-checkbox-card">
+                                                    <span class="modal__product-extra-checkbox-card-image-wrapper">
+                                                        <img src="/images/extra/1.webp" alt=""
+                                                            class="modal__product-extra-checkbox-card-image">
+                                                    </span>
+                                                    <span class="modal__product-extra-checkbox-card-content">
+                                                        <span class="modal__product-extra-checkbox-card-title">
+                                                            Соус<br> фирменный
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="modal__product-extra-list-item">
+                                            <label class="modal__product-extra-checkbox">
+                                                <input type="radio" name="extra" value="Соус фирменный"
+                                                    class="modal__product-extra-checkbox-input">
+                                                <span class="modal__product-extra-checkbox-card">
+                                                    <span class="modal__product-extra-checkbox-card-image-wrapper">
+                                                        <img src="/images/extra/2.webp" alt=""
+                                                            class="modal__product-extra-checkbox-card-image">
+                                                    </span>
+                                                    <span class="modal__product-extra-checkbox-card-content">
+                                                        <span class="modal__product-extra-checkbox-card-title">
+                                                            СОУС<br>
+                                                            БАРБЕКЮ
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="modal__product-extra-list-item">
+                                            <label class="modal__product-extra-checkbox">
+                                                <input type="radio" name="extra" value="Соус фирменный"
+                                                    class="modal__product-extra-checkbox-input">
+                                                <span class="modal__product-extra-checkbox-card">
+                                                    <span class="modal__product-extra-checkbox-card-image-wrapper">
+                                                        <img src="/images/extra/3.webp" alt=""
+                                                            class="modal__product-extra-checkbox-card-image">
+                                                    </span>
+                                                    <span class="modal__product-extra-checkbox-card-content">
+                                                        <span class="modal__product-extra-checkbox-card-title">
+                                                            СОУС<br> КИСЛОСЛАДКИЙ
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="modal__product-extra-block">
+                                    <h3 class="modal__product-extra-heading">
+                                        Добавить ингредиенты
+                                    </h3>
+                                    <ul class="modal__product-extra-list">
+                                        <li class="modal__product-extra-list-item">
+                                            <label class="modal__product-extra-checkbox">
+                                                <input type="radio" name="extra-ingred" value="Сыр"
+                                                    class="modal__product-extra-checkbox-input" checked="">
+                                                <span class="modal__product-extra-checkbox-card">
+                                                    <span class="modal__product-extra-checkbox-card-image-wrapper">
+                                                        <img src="/images/extra/4.webp" alt=""
+                                                            class="modal__product-extra-checkbox-card-image">
+                                                    </span>
+                                                    <span class="modal__product-extra-checkbox-card-content">
+                                                        <span class="modal__product-extra-checkbox-card-title">
+                                                            Сыр
+                                                        </span>
+                                                        <span class="modal__product-extra-checkbox-card-price">
+                                                            +25 ₽
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="modal__product-extra-list-item">
+                                            <label class="modal__product-extra-checkbox">
+                                                <input type="radio" name="extra-ingred" value="Грибы"
+                                                    class="modal__product-extra-checkbox-input">
+                                                <span class="modal__product-extra-checkbox-card">
+                                                    <span class="modal__product-extra-checkbox-card-image-wrapper">
+                                                        <img src="/images/extra/5.webp" alt=""
+                                                            class="modal__product-extra-checkbox-card-image">
+                                                    </span>
+                                                    <span class="modal__product-extra-checkbox-card-content">
+                                                        <span class="modal__product-extra-checkbox-card-title">
+                                                            Грибы
+                                                        </span>
+                                                        <span class="modal__product-extra-checkbox-card-price">
+                                                            +25 ₽
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="modal__product-extra-list-item">
+                                            <label class="modal__product-extra-checkbox">
+                                                <input type="radio" name="extra-ingred" value="Картофель фри"
+                                                    class="modal__product-extra-checkbox-input">
+                                                <span class="modal__product-extra-checkbox-card">
+                                                    <span class="modal__product-extra-checkbox-card-image-wrapper">
+                                                        <img src="/images/extra/6.webp" alt=""
+                                                            class="modal__product-extra-checkbox-card-image">
+                                                    </span>
+                                                    <span class="modal__product-extra-checkbox-card-content">
+                                                        <span class="modal__product-extra-checkbox-card-title">
+                                                            Картофель фри
+                                                        </span>
+                                                        <span class="modal__product-extra-checkbox-card-price">
+                                                            +25 ₽
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="modal__product-mobile-remove">
+                                <h3 class="modal__product-mobile-remove-heading">
+                                    можно удалить
+                                </h3>
+                                <ul class="modal__product-mobile-remove-list">
+                                    <li class="modal__product-mobile-remove-list-item">
+                                        <label class="modal__product-mobile-checkbox">
+                                            <input type="checkbox" name="mobile-remove" value="1"
+                                                class="modal__product-mobile-checkbox-input">
+                                            <span class="modal__product-mobile-checkbox-content">
+                                                помидор
+                                                <svg width="14" height="14" aria-hidden="true">
+                                                    <use xlink:href="#remove"></use>
+                                                </svg>
+                                            </span>
+                                        </label>
+                                    </li>
+                                    <li class="modal__product-mobile-remove-list-item">
+                                        <label class="modal__product-mobile-checkbox">
+                                            <input type="checkbox" name="mobile-remove" value="2"
+                                                class="modal__product-mobile-checkbox-input">
+                                            <span class="modal__product-mobile-checkbox-content">
+                                                Лук
+                                                <svg width="14" height="14" aria-hidden="true">
+                                                    <use xlink:href="#remove"></use>
+                                                </svg>
+                                            </span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__product-controls">
+                        <div class="modal__product-counter js-counter">
+                            <button class="modal__product-counter-btn js-counter-minus" type="button">
+                                <svg width="14" height="14" aria-hidden="true">
+                                    <use xlink:href="#minus"></use>
+                                </svg>
+                            </button>
+                            <label class="modal__product-counter-value">
+                                <input type="number" class="modal__product-counter-value-input js-counter-value"
+                                    name="counter" readonly="" value="1">
+                            </label>
+                            <button class="modal__product-counter-btn js-counter-plus" type="button">
+                                <svg width="14" height="14" aria-hidden="true">
+                                    <use xlink:href="#plus"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <button class="modal__product-submit">
+                            <span class="modal__product-submit-only-desktop-text">
+                                Добавить
+                            </span>
+                            в корзину
+                            <span class="modal__product-submit-price">
+                                199 ₽
+                            </span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal js-modal" id="potato-modal">
+    <div class="modal__inner">
+        <button class="modal__close js-close-modal">
+            <svg width="14" height="14" aria-hidden="true">
+                <use xlink:href="#close"></use>
+            </svg>
+        </button>
+        <div class="modal__product">
+            <div class="modal__product-left-col">
+                <div class="modal__product-image-wrapper">
+                    <img src="/images/modals/potato.webp" alt="" class="modal__product-image" loading="lazy">
+                </div>
+            </div>
+            <div class="modal__product-right-col">
+                <form action="/" class="modal__product-form">
+                    <div class="modal__product-content">
+                        <div class="modal__product-content-inner" data-lenis-prevent="">
+                            <h3 class="modal__product-heading">
+                                Картошка фри
+                            </h3>
+                            <div class="modal__product-ingredients">
+                                Запеченная в печи картошечка. Привычный вкус и мало масла
+                            </div>
+
+
+                            <div class="modal__product-extra">
+                                <div class="modal__product-extra-block">
+                                    <h3 class="modal__product-extra-heading">
+                                        Добавить соус
+                                    </h3>
+                                    <ul class="modal__product-extra-list">
+                                        <li class="modal__product-extra-list-item">
+                                            <label class="modal__product-extra-checkbox">
+                                                <input type="checkbox" name="extra[]" value="Соус фирменный"
+                                                    class="modal__product-extra-checkbox-input">
+                                                <span class="modal__product-extra-checkbox-card">
+                                                    <span class="modal__product-extra-checkbox-card-image-wrapper">
+                                                        <img src="/images/extra/1.webp" alt=""
+                                                            class="modal__product-extra-checkbox-card-image">
+                                                    </span>
+                                                    <span class="modal__product-extra-checkbox-card-content">
+                                                        <span class="modal__product-extra-checkbox-card-title">
+                                                            Соус<br> фирменный
+                                                        </span>
+                                                        <span class="modal__product-extra-checkbox-card-price">
+                                                            +25 ₽
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="modal__product-extra-list-item">
+                                            <label class="modal__product-extra-checkbox">
+                                                <input type="checkbox" name="extra[]" value="Соус фирменный"
+                                                    class="modal__product-extra-checkbox-input">
+                                                <span class="modal__product-extra-checkbox-card">
+                                                    <span class="modal__product-extra-checkbox-card-image-wrapper">
+                                                        <img src="/images/extra/2.webp" alt=""
+                                                            class="modal__product-extra-checkbox-card-image">
+                                                    </span>
+                                                    <span class="modal__product-extra-checkbox-card-content">
+                                                        <span class="modal__product-extra-checkbox-card-title">
+                                                            СОУС<br>
+                                                            БАРБЕКЮ
+                                                        </span>
+                                                        <span class="modal__product-extra-checkbox-card-price">
+                                                            +25 ₽
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="modal__product-extra-list-item">
+                                            <label class="modal__product-extra-checkbox">
+                                                <input type="checkbox" name="extra[]" value="Соус фирменный"
+                                                    class="modal__product-extra-checkbox-input">
+                                                <span class="modal__product-extra-checkbox-card">
+                                                    <span class="modal__product-extra-checkbox-card-image-wrapper">
+                                                        <img src="/images/extra/3.webp" alt=""
+                                                            class="modal__product-extra-checkbox-card-image">
+                                                    </span>
+                                                    <span class="modal__product-extra-checkbox-card-content">
+                                                        <span class="modal__product-extra-checkbox-card-title">
+                                                            СОУС<br> КИСЛОСЛАДКИЙ
+                                                        </span>
+                                                        <span class="modal__product-extra-checkbox-card-price">
+                                                            +25 ₽
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="modal__product-extra-list-item">
+                                            <label class="modal__product-extra-checkbox">
+                                                <input type="checkbox" name="extra[]" value="Соус фирменный"
+                                                    class="modal__product-extra-checkbox-input">
+                                                <span class="modal__product-extra-checkbox-card">
+                                                    <span class="modal__product-extra-checkbox-card-image-wrapper">
+                                                        <img src="/images/extra/7.webp" alt=""
+                                                            class="modal__product-extra-checkbox-card-image">
+                                                    </span>
+                                                    <span class="modal__product-extra-checkbox-card-content">
+                                                        <span class="modal__product-extra-checkbox-card-title">
+                                                            Соус<br> фирменный
+                                                        </span>
+                                                        <span class="modal__product-extra-checkbox-card-price">
+                                                            +25 ₽
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="modal__product-extra-list-item">
+                                            <label class="modal__product-extra-checkbox">
+                                                <input type="checkbox" name="extra[]" value="Соус белый сметанный"
+                                                    class="modal__product-extra-checkbox-input">
+                                                <span class="modal__product-extra-checkbox-card">
+                                                    <span class="modal__product-extra-checkbox-card-image-wrapper">
+                                                        <img src="/images/extra/8.webp" alt=""
+                                                            class="modal__product-extra-checkbox-card-image">
+                                                    </span>
+                                                    <span class="modal__product-extra-checkbox-card-content">
+                                                        <span class="modal__product-extra-checkbox-card-title">
+                                                            Соус белый<br> сметанный
+                                                        </span>
+                                                        <span class="modal__product-extra-checkbox-card-price">
+                                                            +25 ₽
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="modal__product-extra-list-item">
+                                            <label class="modal__product-extra-checkbox">
+                                                <input type="checkbox" name="extra[]" value="Соус красный аджика"
+                                                    class="modal__product-extra-checkbox-input">
+                                                <span class="modal__product-extra-checkbox-card">
+                                                    <span class="modal__product-extra-checkbox-card-image-wrapper">
+                                                        <img src="/images/extra/9.webp" alt=""
+                                                            class="modal__product-extra-checkbox-card-image">
+                                                    </span>
+                                                    <span class="modal__product-extra-checkbox-card-content">
+                                                        <span class="modal__product-extra-checkbox-card-title">
+                                                            Соус красный<br> аджика
+                                                        </span>
+                                                        <span class="modal__product-extra-checkbox-card-price">
+                                                            +25 ₽
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="modal__product-extra-list-item">
+                                            <label class="modal__product-extra-checkbox">
+                                                <input type="checkbox" name="extra[]" value="Соус ранч чесночный"
+                                                    class="modal__product-extra-checkbox-input">
+                                                <span class="modal__product-extra-checkbox-card">
+                                                    <span class="modal__product-extra-checkbox-card-image-wrapper">
+                                                        <img src="/images/extra/10.webp" alt=""
+                                                            class="modal__product-extra-checkbox-card-image">
+                                                    </span>
+                                                    <span class="modal__product-extra-checkbox-card-content">
+                                                        <span class="modal__product-extra-checkbox-card-title">
+                                                            Соус ранч<br> чесночный
+                                                        </span>
+                                                        <span class="modal__product-extra-checkbox-card-price">
+                                                            +25 ₽
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="modal__product-extra-list-item">
+                                            <label class="modal__product-extra-checkbox">
+                                                <input type="checkbox" name="extra[]" value="Соус кетчуп"
+                                                    class="modal__product-extra-checkbox-input">
+                                                <span class="modal__product-extra-checkbox-card">
+                                                    <span class="modal__product-extra-checkbox-card-image-wrapper">
+                                                        <img src="/images/extra/11.webp" alt=""
+                                                            class="modal__product-extra-checkbox-card-image">
+                                                    </span>
+                                                    <span class="modal__product-extra-checkbox-card-content">
+                                                        <span class="modal__product-extra-checkbox-card-title">
+                                                            Соус <br>
+                                                            кетчуп
+                                                        </span>
+                                                        <span class="modal__product-extra-checkbox-card-price">
+                                                            +25 ₽
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__product-controls">
+                        <div class="modal__product-counter js-counter">
+                            <button class="modal__product-counter-btn js-counter-minus" type="button">
+                                <svg width="14" height="14" aria-hidden="true">
+                                    <use xlink:href="#minus"></use>
+                                </svg>
+                            </button>
+                            <label class="modal__product-counter-value">
+                                <input type="number" class="modal__product-counter-value-input js-counter-value"
+                                    name="counter" readonly="" value="1">
+                            </label>
+                            <button class="modal__product-counter-btn js-counter-plus" type="button">
+                                <svg width="14" height="14" aria-hidden="true">
+                                    <use xlink:href="#plus"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <button class="modal__product-submit">
+                            <span class="modal__product-submit-only-desktop-text">
+                                Добавить
+                            </span>
+                            в корзину
+                            <span class="modal__product-submit-price">
+                                199 ₽
+                            </span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal js-modal" id="combo-modal">
+    <div class="modal__inner">
+        <button class="modal__close js-close-modal">
+            <svg width="14" height="14" aria-hidden="true">
+                <use xlink:href="#close"></use>
+            </svg>
+        </button>
+        <div class="modal__product">
+            <div class="modal__product-left-col">
+                <div class="modal__product-image-wrapper">
+                    <img src="/images/modals/combo.webp" alt="" class="modal__product-image" loading="lazy">
+                </div>
+            </div>
+            <div class="modal__product-right-col">
+                <form action="/" class="modal__product-form">
+                    <div class="modal__product-content">
+                        <div class="modal__product-content-inner" data-lenis-prevent="">
+                            <h3 class="modal__product-heading">
+                                Комбо с шашлыком из курицы
+                            </h3>
+
+
+                            <div class="modal__product-ingredients">
+                                Мясо курицы (120г), картошка (150г), капустный салат (40г), <label
+                                    class="modal__product-ingredients-remove">
+                                    <input type="checkbox" name="remove-onion" value="Y"
+                                        class="modal__product-ingredients-remove-input" />
+                                    <span class="modal__product-ingredients-remove-text">лук</span>
+                                    <span class="modal__product-ingredients-remove-icon">
+                                        <svg width="14" height="14" aria-hidden="true">
+                                            <use xlink:href="#remove-ingredient"></use>
+                                        </svg>
+                                    </span>
+                                </label>, соус, 1/4 лепешки
+                            </div>
+
+                            <div class="modal__product-extra">
+                                <div class="modal__product-extra-block">
+                                    <h3 class="modal__product-extra-heading">
+                                        Добавить соус
+                                    </h3>
+                                    <ul class="modal__product-extra-list">
+                                        <li class="modal__product-extra-list-item">
+                                            <label class="modal__product-extra-checkbox">
+                                                <input type="checkbox" name="extra[]" value="Соус фирменный"
+                                                    class="modal__product-extra-checkbox-input">
+                                                <span class="modal__product-extra-checkbox-card">
+                                                    <span class="modal__product-extra-checkbox-card-image-wrapper">
+                                                        <img src="/images/extra/1.webp" alt=""
+                                                            class="modal__product-extra-checkbox-card-image">
+                                                    </span>
+                                                    <span class="modal__product-extra-checkbox-card-content">
+                                                        <span class="modal__product-extra-checkbox-card-title">
+                                                            Соус<br> фирменный
+                                                        </span>
+                                                        <span class="modal__product-extra-checkbox-card-price">
+                                                            +25 ₽
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="modal__product-extra-list-item">
+                                            <label class="modal__product-extra-checkbox">
+                                                <input type="checkbox" name="extra[]" value="Соус фирменный"
+                                                    class="modal__product-extra-checkbox-input">
+                                                <span class="modal__product-extra-checkbox-card">
+                                                    <span class="modal__product-extra-checkbox-card-image-wrapper">
+                                                        <img src="/images/extra/2.webp" alt=""
+                                                            class="modal__product-extra-checkbox-card-image">
+                                                    </span>
+                                                    <span class="modal__product-extra-checkbox-card-content">
+                                                        <span class="modal__product-extra-checkbox-card-title">
+                                                            СОУС<br>
+                                                            БАРБЕКЮ
+                                                        </span>
+                                                        <span class="modal__product-extra-checkbox-card-price">
+                                                            +25 ₽
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="modal__product-extra-list-item">
+                                            <label class="modal__product-extra-checkbox">
+                                                <input type="checkbox" name="extra[]" value="Соус фирменный"
+                                                    class="modal__product-extra-checkbox-input">
+                                                <span class="modal__product-extra-checkbox-card">
+                                                    <span class="modal__product-extra-checkbox-card-image-wrapper">
+                                                        <img src="/images/extra/3.webp" alt=""
+                                                            class="modal__product-extra-checkbox-card-image">
+                                                    </span>
+                                                    <span class="modal__product-extra-checkbox-card-content">
+                                                        <span class="modal__product-extra-checkbox-card-title">
+                                                            СОУС<br> КИСЛОСЛАДКИЙ
+                                                        </span>
+                                                        <span class="modal__product-extra-checkbox-card-price">
+                                                            +25 ₽
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="modal__product-extra-list-item">
+                                            <label class="modal__product-extra-checkbox">
+                                                <input type="checkbox" name="extra[]" value="Соус фирменный"
+                                                    class="modal__product-extra-checkbox-input">
+                                                <span class="modal__product-extra-checkbox-card">
+                                                    <span class="modal__product-extra-checkbox-card-image-wrapper">
+                                                        <img src="/images/extra/7.webp" alt=""
+                                                            class="modal__product-extra-checkbox-card-image">
+                                                    </span>
+                                                    <span class="modal__product-extra-checkbox-card-content">
+                                                        <span class="modal__product-extra-checkbox-card-title">
+                                                            Соус<br> фирменный
+                                                        </span>
+                                                        <span class="modal__product-extra-checkbox-card-price">
+                                                            +25 ₽
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="modal__product-extra-list-item">
+                                            <label class="modal__product-extra-checkbox">
+                                                <input type="checkbox" name="extra[]" value="Соус белый сметанный"
+                                                    class="modal__product-extra-checkbox-input">
+                                                <span class="modal__product-extra-checkbox-card">
+                                                    <span class="modal__product-extra-checkbox-card-image-wrapper">
+                                                        <img src="/images/extra/8.webp" alt=""
+                                                            class="modal__product-extra-checkbox-card-image">
+                                                    </span>
+                                                    <span class="modal__product-extra-checkbox-card-content">
+                                                        <span class="modal__product-extra-checkbox-card-title">
+                                                            Соус белый<br> сметанный
+                                                        </span>
+                                                        <span class="modal__product-extra-checkbox-card-price">
+                                                            +25 ₽
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="modal__product-extra-list-item">
+                                            <label class="modal__product-extra-checkbox">
+                                                <input type="checkbox" name="extra[]" value="Соус красный аджика"
+                                                    class="modal__product-extra-checkbox-input">
+                                                <span class="modal__product-extra-checkbox-card">
+                                                    <span class="modal__product-extra-checkbox-card-image-wrapper">
+                                                        <img src="/images/extra/9.webp" alt=""
+                                                            class="modal__product-extra-checkbox-card-image">
+                                                    </span>
+                                                    <span class="modal__product-extra-checkbox-card-content">
+                                                        <span class="modal__product-extra-checkbox-card-title">
+                                                            Соус красный<br> аджика
+                                                        </span>
+                                                        <span class="modal__product-extra-checkbox-card-price">
+                                                            +25 ₽
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="modal__product-extra-list-item">
+                                            <label class="modal__product-extra-checkbox">
+                                                <input type="checkbox" name="extra[]" value="Соус ранч чесночный"
+                                                    class="modal__product-extra-checkbox-input">
+                                                <span class="modal__product-extra-checkbox-card">
+                                                    <span class="modal__product-extra-checkbox-card-image-wrapper">
+                                                        <img src="/images/extra/10.webp" alt=""
+                                                            class="modal__product-extra-checkbox-card-image">
+                                                    </span>
+                                                    <span class="modal__product-extra-checkbox-card-content">
+                                                        <span class="modal__product-extra-checkbox-card-title">
+                                                            Соус ранч<br> чесночный
+                                                        </span>
+                                                        <span class="modal__product-extra-checkbox-card-price">
+                                                            +25 ₽
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="modal__product-extra-list-item">
+                                            <label class="modal__product-extra-checkbox">
+                                                <input type="checkbox" name="extra[]" value="Соус кетчуп"
+                                                    class="modal__product-extra-checkbox-input">
+                                                <span class="modal__product-extra-checkbox-card">
+                                                    <span class="modal__product-extra-checkbox-card-image-wrapper">
+                                                        <img src="/images/extra/11.webp" alt=""
+                                                            class="modal__product-extra-checkbox-card-image">
+                                                    </span>
+                                                    <span class="modal__product-extra-checkbox-card-content">
+                                                        <span class="modal__product-extra-checkbox-card-title">
+                                                            Соус <br>
+                                                            кетчуп
+                                                        </span>
+                                                        <span class="modal__product-extra-checkbox-card-price">
+                                                            +25 ₽
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__product-controls">
+                        <div class="modal__product-counter js-counter">
+                            <button class="modal__product-counter-btn js-counter-minus" type="button">
+                                <svg width="14" height="14" aria-hidden="true">
+                                    <use xlink:href="#minus"></use>
+                                </svg>
+                            </button>
+                            <label class="modal__product-counter-value">
+                                <input type="number" class="modal__product-counter-value-input js-counter-value"
+                                    name="counter" readonly="" value="1">
+                            </label>
+                            <button class="modal__product-counter-btn js-counter-plus" type="button">
+                                <svg width="14" height="14" aria-hidden="true">
+                                    <use xlink:href="#plus"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <button class="modal__product-submit">
+                            <span class="modal__product-submit-only-desktop-text">
+                                Добавить
+                            </span>
+                            в корзину
+                            <span class="modal__product-submit-price">
+                                199 ₽
+                            </span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal js-modal" id="shish-modal">
+    <div class="modal__inner">
+        <button class="modal__close js-close-modal">
+            <svg width="14" height="14" aria-hidden="true">
+                <use xlink:href="#close"></use>
+            </svg>
+        </button>
+        <div class="modal__product">
+            <div class="modal__product-left-col">
+                <div class="modal__product-image-wrapper">
+                    <img src="/images/modals/shish.webp" alt="" class="modal__product-image" loading="lazy">
+                </div>
+            </div>
+            <div class="modal__product-right-col">
+                <form action="/" class="modal__product-form">
+                    <div class="modal__product-content">
+                        <div class="modal__product-content-inner" data-lenis-prevent="">
+                            <h3 class="modal__product-heading">
+                                Шашлык из курицы
+                                <div class="modal__product-info">
+                                    <svg width="14" height="14" aria-hidden="true">
+                                        <use xlink:href="#info"></use>
+                                    </svg>
+                                    <div class="modal__product-info-dropdown">
+                                        <div class="modal__product-info-dropdown-inner">
+                                            На каждые 100 г. идет дополнительная порция салата, лука и 1/4 лепешки
+                                        </div>
+                                    </div>
+                                </div>
+                            </h3>
+
+
+                            <div class="modal__product-ingredients">
+                                Филе бедра без кожи, капустный салат, <label class="modal__product-ingredients-remove">
+                                    <input type="checkbox" name="remove-onion" value="Y"
+                                        class="modal__product-ingredients-remove-input" />
+                                    <span class="modal__product-ingredients-remove-text">маринованный лук</span>
+                                    <span class="modal__product-ingredients-remove-icon">
+                                        <svg width="14" height="14" aria-hidden="true">
+                                            <use xlink:href="#remove-ingredient"></use>
+                                        </svg>
+                                    </span>
+                                </label>, 1/4 лепешки (100г/20г/20г/30г)
+                            </div>
+
+
+                            <div class="modal__product-portion">
+                                <div class="modal__product-portion-select js-select">
+                                    <button class="modal__product-portion-select-btn" type="button">
+                                        <span class="modal__product-portion-select-btn-text">
+                                            500 гр.
+                                        </span>
+                                        <svg width="14" height="14" aria-hidden="true">
+                                            <use xlink:href="#select-arrow"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="modal__product-portion-select-dropdown">
+                                        <div class="modal__product-portion-select-dropdown-inner">
+                                            <ul class="modal__product-portion-select-list">
+                                                <li class="modal__product-portion-select-list-item">
+                                                    <label class="modal__product-portion-select-choice">
+                                                        <input type="radio" name="portion" value="500 ГР."
+                                                            class="modal__product-portion-select-choice-input"
+                                                            checked="">
+                                                        <span class="modal__product-portion-select-choice-text">
+                                                            500 ГР.
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                                <li class="modal__product-portion-select-list-item">
+                                                    <label class="modal__product-portion-select-choice">
+                                                        <input type="radio" name="portion" value="600 ГР."
+                                                            class="modal__product-portion-select-choice-input">
+                                                        <span class="modal__product-portion-select-choice-text">
+                                                            600 ГР.
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                                <li class="modal__product-portion-select-list-item">
+                                                    <label class="modal__product-portion-select-choice">
+                                                        <input type="radio" name="portion" value="700 ГР."
+                                                            class="modal__product-portion-select-choice-input">
+                                                        <span class="modal__product-portion-select-choice-text">
+                                                            700 ГР.
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                                <li class="modal__product-portion-select-list-item">
+                                                    <label class="modal__product-portion-select-choice">
+                                                        <input type="radio" name="portion" value="800 ГР."
+                                                            class="modal__product-portion-select-choice-input">
+                                                        <span class="modal__product-portion-select-choice-text">
+                                                            800 ГР.
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                                <li class="modal__product-portion-select-list-item">
+                                                    <label class="modal__product-portion-select-choice">
+                                                        <input type="radio" name="portion" value="900 ГР."
+                                                            class="modal__product-portion-select-choice-input">
+                                                        <span class="modal__product-portion-select-choice-text">
+                                                            900 ГР.
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                                <li class="modal__product-portion-select-list-item">
+                                                    <label class="modal__product-portion-select-choice">
+                                                        <input type="radio" name="portion" value="1000 ГР."
+                                                            class="modal__product-portion-select-choice-input">
+                                                        <span class="modal__product-portion-select-choice-text">
+                                                            1000 ГР.
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal__product-portion-text">
+                                    На каждые 100 г. идет дополнительная порция салата, лука и 1/4 лепешки
+                                </div>
+                            </div>
+
+
+
+                            <div class="modal__product-extra">
+                                <div class="modal__product-extra-block">
+                                    <h3 class="modal__product-extra-heading">
+                                        Добавить соус
+                                    </h3>
+                                    <ul class="modal__product-extra-list">
+                                        <li class="modal__product-extra-list-item">
+                                            <label class="modal__product-extra-checkbox">
+                                                <input type="checkbox" name="extra[]" value="Соус фирменный"
+                                                    class="modal__product-extra-checkbox-input">
+                                                <span class="modal__product-extra-checkbox-card">
+                                                    <span class="modal__product-extra-checkbox-card-image-wrapper">
+                                                        <img src="/images/extra/1.webp" alt=""
+                                                            class="modal__product-extra-checkbox-card-image">
+                                                    </span>
+                                                    <span class="modal__product-extra-checkbox-card-content">
+                                                        <span class="modal__product-extra-checkbox-card-title">
+                                                            Соус<br> фирменный
+                                                        </span>
+                                                        <span class="modal__product-extra-checkbox-card-price">
+                                                            +25 ₽
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="modal__product-extra-list-item">
+                                            <label class="modal__product-extra-checkbox">
+                                                <input type="checkbox" name="extra[]" value="Соус фирменный"
+                                                    class="modal__product-extra-checkbox-input">
+                                                <span class="modal__product-extra-checkbox-card">
+                                                    <span class="modal__product-extra-checkbox-card-image-wrapper">
+                                                        <img src="/images/extra/2.webp" alt=""
+                                                            class="modal__product-extra-checkbox-card-image">
+                                                    </span>
+                                                    <span class="modal__product-extra-checkbox-card-content">
+                                                        <span class="modal__product-extra-checkbox-card-title">
+                                                            СОУС<br>
+                                                            БАРБЕКЮ
+                                                        </span>
+                                                        <span class="modal__product-extra-checkbox-card-price">
+                                                            +25 ₽
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="modal__product-extra-list-item">
+                                            <label class="modal__product-extra-checkbox">
+                                                <input type="checkbox" name="extra[]" value="Соус фирменный"
+                                                    class="modal__product-extra-checkbox-input">
+                                                <span class="modal__product-extra-checkbox-card">
+                                                    <span class="modal__product-extra-checkbox-card-image-wrapper">
+                                                        <img src="/images/extra/3.webp" alt=""
+                                                            class="modal__product-extra-checkbox-card-image">
+                                                    </span>
+                                                    <span class="modal__product-extra-checkbox-card-content">
+                                                        <span class="modal__product-extra-checkbox-card-title">
+                                                            СОУС<br> КИСЛОСЛАДКИЙ
+                                                        </span>
+                                                        <span class="modal__product-extra-checkbox-card-price">
+                                                            +25 ₽
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="modal__product-extra-list-item">
+                                            <label class="modal__product-extra-checkbox">
+                                                <input type="checkbox" name="extra[]" value="Соус фирменный"
+                                                    class="modal__product-extra-checkbox-input">
+                                                <span class="modal__product-extra-checkbox-card">
+                                                    <span class="modal__product-extra-checkbox-card-image-wrapper">
+                                                        <img src="/images/extra/7.webp" alt=""
+                                                            class="modal__product-extra-checkbox-card-image">
+                                                    </span>
+                                                    <span class="modal__product-extra-checkbox-card-content">
+                                                        <span class="modal__product-extra-checkbox-card-title">
+                                                            Соус<br> фирменный
+                                                        </span>
+                                                        <span class="modal__product-extra-checkbox-card-price">
+                                                            +25 ₽
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="modal__product-extra-list-item">
+                                            <label class="modal__product-extra-checkbox">
+                                                <input type="checkbox" name="extra[]" value="Соус белый сметанный"
+                                                    class="modal__product-extra-checkbox-input">
+                                                <span class="modal__product-extra-checkbox-card">
+                                                    <span class="modal__product-extra-checkbox-card-image-wrapper">
+                                                        <img src="/images/extra/8.webp" alt=""
+                                                            class="modal__product-extra-checkbox-card-image">
+                                                    </span>
+                                                    <span class="modal__product-extra-checkbox-card-content">
+                                                        <span class="modal__product-extra-checkbox-card-title">
+                                                            Соус белый<br> сметанный
+                                                        </span>
+                                                        <span class="modal__product-extra-checkbox-card-price">
+                                                            +25 ₽
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="modal__product-extra-list-item">
+                                            <label class="modal__product-extra-checkbox">
+                                                <input type="checkbox" name="extra[]" value="Соус красный аджика"
+                                                    class="modal__product-extra-checkbox-input">
+                                                <span class="modal__product-extra-checkbox-card">
+                                                    <span class="modal__product-extra-checkbox-card-image-wrapper">
+                                                        <img src="/images/extra/9.webp" alt=""
+                                                            class="modal__product-extra-checkbox-card-image">
+                                                    </span>
+                                                    <span class="modal__product-extra-checkbox-card-content">
+                                                        <span class="modal__product-extra-checkbox-card-title">
+                                                            Соус красный<br> аджика
+                                                        </span>
+                                                        <span class="modal__product-extra-checkbox-card-price">
+                                                            +25 ₽
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="modal__product-extra-list-item">
+                                            <label class="modal__product-extra-checkbox">
+                                                <input type="checkbox" name="extra[]" value="Соус ранч чесночный"
+                                                    class="modal__product-extra-checkbox-input">
+                                                <span class="modal__product-extra-checkbox-card">
+                                                    <span class="modal__product-extra-checkbox-card-image-wrapper">
+                                                        <img src="/images/extra/10.webp" alt=""
+                                                            class="modal__product-extra-checkbox-card-image">
+                                                    </span>
+                                                    <span class="modal__product-extra-checkbox-card-content">
+                                                        <span class="modal__product-extra-checkbox-card-title">
+                                                            Соус ранч<br> чесночный
+                                                        </span>
+                                                        <span class="modal__product-extra-checkbox-card-price">
+                                                            +25 ₽
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="modal__product-extra-list-item">
+                                            <label class="modal__product-extra-checkbox">
+                                                <input type="checkbox" name="extra[]" value="Соус кетчуп"
+                                                    class="modal__product-extra-checkbox-input">
+                                                <span class="modal__product-extra-checkbox-card">
+                                                    <span class="modal__product-extra-checkbox-card-image-wrapper">
+                                                        <img src="/images/extra/11.webp" alt=""
+                                                            class="modal__product-extra-checkbox-card-image">
+                                                    </span>
+                                                    <span class="modal__product-extra-checkbox-card-content">
+                                                        <span class="modal__product-extra-checkbox-card-title">
+                                                            Соус <br>
+                                                            кетчуп
+                                                        </span>
+                                                        <span class="modal__product-extra-checkbox-card-price">
+                                                            +25 ₽
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="modal__product-mobile-remove">
+                                <h3 class="modal__product-mobile-remove-heading">
+                                    можно удалить
+                                </h3>
+                                <ul class="modal__product-mobile-remove-list">
+
+                                    <li class="modal__product-mobile-remove-list-item">
+                                        <label class="modal__product-mobile-checkbox">
+                                            <input type="checkbox" name="mobile-remove" value="2"
+                                                class="modal__product-mobile-checkbox-input">
+                                            <span class="modal__product-mobile-checkbox-content">
+                                                маринованный лук
+                                                <svg width="14" height="14" aria-hidden="true">
+                                                    <use xlink:href="#remove"></use>
+                                                </svg>
+                                            </span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__product-controls">
+
+                        <div class="modal__product-mobile-select">
+                            <div class="modal__product-portion-select js-select">
+                                <button class="modal__product-portion-select-btn" type="button">
+                                    <span class="modal__product-portion-select-btn-text">
+                                        500 гр.
+                                    </span>
+                                    <svg width="14" height="14" aria-hidden="true">
+                                        <use xlink:href="#select-arrow"></use>
+                                    </svg>
+                                </button>
+                                <div class="modal__product-portion-select-dropdown">
+                                    <div class="modal__product-portion-select-dropdown-inner">
+                                        <ul class="modal__product-portion-select-list">
+                                            <li class="modal__product-portion-select-list-item">
+                                                <label class="modal__product-portion-select-choice">
+                                                    <input type="radio" name="portion-mobile" value="500 ГР."
+                                                        class="modal__product-portion-select-choice-input" checked="">
+                                                    <span class="modal__product-portion-select-choice-text">
+                                                        500 ГР.
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li class="modal__product-portion-select-list-item">
+                                                <label class="modal__product-portion-select-choice">
+                                                    <input type="radio" name="portion-mobile" value="600 ГР."
+                                                        class="modal__product-portion-select-choice-input">
+                                                    <span class="modal__product-portion-select-choice-text">
+                                                        600 ГР.
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li class="modal__product-portion-select-list-item">
+                                                <label class="modal__product-portion-select-choice">
+                                                    <input type="radio" name="portion-mobile" value="700 ГР."
+                                                        class="modal__product-portion-select-choice-input">
+                                                    <span class="modal__product-portion-select-choice-text">
+                                                        700 ГР.
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li class="modal__product-portion-select-list-item">
+                                                <label class="modal__product-portion-select-choice">
+                                                    <input type="radio" name="portion-mobile" value="800 ГР."
+                                                        class="modal__product-portion-select-choice-input">
+                                                    <span class="modal__product-portion-select-choice-text">
+                                                        800 ГР.
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li class="modal__product-portion-select-list-item">
+                                                <label class="modal__product-portion-select-choice">
+                                                    <input type="radio" name="portion-mobile" value="900 ГР."
+                                                        class="modal__product-portion-select-choice-input">
+                                                    <span class="modal__product-portion-select-choice-text">
+                                                        900 ГР.
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li class="modal__product-portion-select-list-item">
+                                                <label class="modal__product-portion-select-choice">
+                                                    <input type="radio" name="portion-mobile" value="1000 ГР."
+                                                        class="modal__product-portion-select-choice-input">
+                                                    <span class="modal__product-portion-select-choice-text">
+                                                        1000 ГР.
+                                                    </span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="modal__product-submit">
+                            <span class="modal__product-submit-only-desktop-text">
+                                Добавить
+                            </span>
+                            в корзину
+                            <span class="modal__product-submit-price">
+                                199 ₽
+                            </span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal js-modal" id="picnic-modal">
+    <div class="modal__inner">
+        <button class="modal__close js-close-modal">
+            <svg width="14" height="14" aria-hidden="true">
+                <use xlink:href="#close"></use>
+            </svg>
+        </button>
+        <div class="modal__product">
+            <div class="modal__product-left-col">
+                <div class="modal__product-image-wrapper">
+                    <img src="/images/modals/picnic.webp" alt="" class="modal__product-image" loading="lazy">
+                </div>
+            </div>
+            <div class="modal__product-right-col">
+                <form action="/" class="modal__product-form">
+                    <div class="modal__product-content">
+                        <div class="modal__product-content-inner" data-lenis-prevent="">
+                            <h3 class="modal__product-heading">
+                                Маринованное мясо для шашлыка (курица)
+
+                            </h3>
+
+
+                            <div class="modal__product-ingredients">
+                                Мясо курицы, специи
+                            </div>
+
+
+                            <div class="modal__product-portion">
+                                <div class="modal__product-portion-select js-select">
+                                    <button class="modal__product-portion-select-btn" type="button">
+                                        <span class="modal__product-portion-select-btn-text">
+                                            500 гр.
+                                        </span>
+                                        <svg width="14" height="14" aria-hidden="true">
+                                            <use xlink:href="#select-arrow"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="modal__product-portion-select-dropdown">
+                                        <div class="modal__product-portion-select-dropdown-inner">
+                                            <ul class="modal__product-portion-select-list">
+                                                <li class="modal__product-portion-select-list-item">
+                                                    <label class="modal__product-portion-select-choice">
+                                                        <input type="radio" name="portion" value="500 ГР."
+                                                            class="modal__product-portion-select-choice-input"
+                                                            checked="">
+                                                        <span class="modal__product-portion-select-choice-text">
+                                                            500 ГР.
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                                <li class="modal__product-portion-select-list-item">
+                                                    <label class="modal__product-portion-select-choice">
+                                                        <input type="radio" name="portion" value="600 ГР."
+                                                            class="modal__product-portion-select-choice-input">
+                                                        <span class="modal__product-portion-select-choice-text">
+                                                            600 ГР.
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                                <li class="modal__product-portion-select-list-item">
+                                                    <label class="modal__product-portion-select-choice">
+                                                        <input type="radio" name="portion" value="700 ГР."
+                                                            class="modal__product-portion-select-choice-input">
+                                                        <span class="modal__product-portion-select-choice-text">
+                                                            700 ГР.
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                                <li class="modal__product-portion-select-list-item">
+                                                    <label class="modal__product-portion-select-choice">
+                                                        <input type="radio" name="portion" value="800 ГР."
+                                                            class="modal__product-portion-select-choice-input">
+                                                        <span class="modal__product-portion-select-choice-text">
+                                                            800 ГР.
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                                <li class="modal__product-portion-select-list-item">
+                                                    <label class="modal__product-portion-select-choice">
+                                                        <input type="radio" name="portion" value="900 ГР."
+                                                            class="modal__product-portion-select-choice-input">
+                                                        <span class="modal__product-portion-select-choice-text">
+                                                            900 ГР.
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                                <li class="modal__product-portion-select-list-item">
+                                                    <label class="modal__product-portion-select-choice">
+                                                        <input type="radio" name="portion" value="1000 ГР."
+                                                            class="modal__product-portion-select-choice-input">
+                                                        <span class="modal__product-portion-select-choice-text">
+                                                            1000 ГР.
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="modal__product-extra">
+                                <div class="modal__product-extra-block">
+                                    <h3 class="modal__product-extra-heading">
+                                        Добавить соус
+                                    </h3>
+                                    <ul class="modal__product-extra-list">
+                                        <li class="modal__product-extra-list-item">
+                                            <label class="modal__product-extra-checkbox">
+                                                <input type="checkbox" name="extra[]" value="Соус фирменный"
+                                                    class="modal__product-extra-checkbox-input">
+                                                <span class="modal__product-extra-checkbox-card">
+                                                    <span class="modal__product-extra-checkbox-card-image-wrapper">
+                                                        <img src="/images/extra/1.webp" alt=""
+                                                            class="modal__product-extra-checkbox-card-image">
+                                                    </span>
+                                                    <span class="modal__product-extra-checkbox-card-content">
+                                                        <span class="modal__product-extra-checkbox-card-title">
+                                                            Соус<br> фирменный
+                                                        </span>
+                                                        <span class="modal__product-extra-checkbox-card-price">
+                                                            +25 ₽
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="modal__product-extra-list-item">
+                                            <label class="modal__product-extra-checkbox">
+                                                <input type="checkbox" name="extra[]" value="Соус фирменный"
+                                                    class="modal__product-extra-checkbox-input">
+                                                <span class="modal__product-extra-checkbox-card">
+                                                    <span class="modal__product-extra-checkbox-card-image-wrapper">
+                                                        <img src="/images/extra/2.webp" alt=""
+                                                            class="modal__product-extra-checkbox-card-image">
+                                                    </span>
+                                                    <span class="modal__product-extra-checkbox-card-content">
+                                                        <span class="modal__product-extra-checkbox-card-title">
+                                                            СОУС<br>
+                                                            БАРБЕКЮ
+                                                        </span>
+                                                        <span class="modal__product-extra-checkbox-card-price">
+                                                            +25 ₽
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="modal__product-extra-list-item">
+                                            <label class="modal__product-extra-checkbox">
+                                                <input type="checkbox" name="extra[]" value="Соус фирменный"
+                                                    class="modal__product-extra-checkbox-input">
+                                                <span class="modal__product-extra-checkbox-card">
+                                                    <span class="modal__product-extra-checkbox-card-image-wrapper">
+                                                        <img src="/images/extra/3.webp" alt=""
+                                                            class="modal__product-extra-checkbox-card-image">
+                                                    </span>
+                                                    <span class="modal__product-extra-checkbox-card-content">
+                                                        <span class="modal__product-extra-checkbox-card-title">
+                                                            СОУС<br> КИСЛОСЛАДКИЙ
+                                                        </span>
+                                                        <span class="modal__product-extra-checkbox-card-price">
+                                                            +25 ₽
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="modal__product-extra-list-item">
+                                            <label class="modal__product-extra-checkbox">
+                                                <input type="checkbox" name="extra[]" value="Соус фирменный"
+                                                    class="modal__product-extra-checkbox-input">
+                                                <span class="modal__product-extra-checkbox-card">
+                                                    <span class="modal__product-extra-checkbox-card-image-wrapper">
+                                                        <img src="/images/extra/7.webp" alt=""
+                                                            class="modal__product-extra-checkbox-card-image">
+                                                    </span>
+                                                    <span class="modal__product-extra-checkbox-card-content">
+                                                        <span class="modal__product-extra-checkbox-card-title">
+                                                            Соус<br> фирменный
+                                                        </span>
+                                                        <span class="modal__product-extra-checkbox-card-price">
+                                                            +25 ₽
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="modal__product-extra-list-item">
+                                            <label class="modal__product-extra-checkbox">
+                                                <input type="checkbox" name="extra[]" value="Соус белый сметанный"
+                                                    class="modal__product-extra-checkbox-input">
+                                                <span class="modal__product-extra-checkbox-card">
+                                                    <span class="modal__product-extra-checkbox-card-image-wrapper">
+                                                        <img src="/images/extra/8.webp" alt=""
+                                                            class="modal__product-extra-checkbox-card-image">
+                                                    </span>
+                                                    <span class="modal__product-extra-checkbox-card-content">
+                                                        <span class="modal__product-extra-checkbox-card-title">
+                                                            Соус белый<br> сметанный
+                                                        </span>
+                                                        <span class="modal__product-extra-checkbox-card-price">
+                                                            +25 ₽
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="modal__product-extra-list-item">
+                                            <label class="modal__product-extra-checkbox">
+                                                <input type="checkbox" name="extra[]" value="Соус красный аджика"
+                                                    class="modal__product-extra-checkbox-input">
+                                                <span class="modal__product-extra-checkbox-card">
+                                                    <span class="modal__product-extra-checkbox-card-image-wrapper">
+                                                        <img src="/images/extra/9.webp" alt=""
+                                                            class="modal__product-extra-checkbox-card-image">
+                                                    </span>
+                                                    <span class="modal__product-extra-checkbox-card-content">
+                                                        <span class="modal__product-extra-checkbox-card-title">
+                                                            Соус красный<br> аджика
+                                                        </span>
+                                                        <span class="modal__product-extra-checkbox-card-price">
+                                                            +25 ₽
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="modal__product-extra-list-item">
+                                            <label class="modal__product-extra-checkbox">
+                                                <input type="checkbox" name="extra[]" value="Соус ранч чесночный"
+                                                    class="modal__product-extra-checkbox-input">
+                                                <span class="modal__product-extra-checkbox-card">
+                                                    <span class="modal__product-extra-checkbox-card-image-wrapper">
+                                                        <img src="/images/extra/10.webp" alt=""
+                                                            class="modal__product-extra-checkbox-card-image">
+                                                    </span>
+                                                    <span class="modal__product-extra-checkbox-card-content">
+                                                        <span class="modal__product-extra-checkbox-card-title">
+                                                            Соус ранч<br> чесночный
+                                                        </span>
+                                                        <span class="modal__product-extra-checkbox-card-price">
+                                                            +25 ₽
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="modal__product-extra-list-item">
+                                            <label class="modal__product-extra-checkbox">
+                                                <input type="checkbox" name="extra[]" value="Соус кетчуп"
+                                                    class="modal__product-extra-checkbox-input">
+                                                <span class="modal__product-extra-checkbox-card">
+                                                    <span class="modal__product-extra-checkbox-card-image-wrapper">
+                                                        <img src="/images/extra/11.webp" alt=""
+                                                            class="modal__product-extra-checkbox-card-image">
+                                                    </span>
+                                                    <span class="modal__product-extra-checkbox-card-content">
+                                                        <span class="modal__product-extra-checkbox-card-title">
+                                                            Соус <br>
+                                                            кетчуп
+                                                        </span>
+                                                        <span class="modal__product-extra-checkbox-card-price">
+                                                            +25 ₽
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__product-controls">
+
+                        <div class="modal__product-mobile-select">
+                            <div class="modal__product-portion-select js-select">
+                                <button class="modal__product-portion-select-btn" type="button">
+                                    <span class="modal__product-portion-select-btn-text">
+                                        500 гр.
+                                    </span>
+                                    <svg width="14" height="14" aria-hidden="true">
+                                        <use xlink:href="#select-arrow"></use>
+                                    </svg>
+                                </button>
+                                <div class="modal__product-portion-select-dropdown">
+                                    <div class="modal__product-portion-select-dropdown-inner">
+                                        <ul class="modal__product-portion-select-list">
+                                            <li class="modal__product-portion-select-list-item">
+                                                <label class="modal__product-portion-select-choice">
+                                                    <input type="radio" name="portion-mobile" value="500 ГР."
+                                                        class="modal__product-portion-select-choice-input" checked="">
+                                                    <span class="modal__product-portion-select-choice-text">
+                                                        500 ГР.
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li class="modal__product-portion-select-list-item">
+                                                <label class="modal__product-portion-select-choice">
+                                                    <input type="radio" name="portion-mobile" value="600 ГР."
+                                                        class="modal__product-portion-select-choice-input">
+                                                    <span class="modal__product-portion-select-choice-text">
+                                                        600 ГР.
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li class="modal__product-portion-select-list-item">
+                                                <label class="modal__product-portion-select-choice">
+                                                    <input type="radio" name="portion-mobile" value="700 ГР."
+                                                        class="modal__product-portion-select-choice-input">
+                                                    <span class="modal__product-portion-select-choice-text">
+                                                        700 ГР.
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li class="modal__product-portion-select-list-item">
+                                                <label class="modal__product-portion-select-choice">
+                                                    <input type="radio" name="portion-mobile" value="800 ГР."
+                                                        class="modal__product-portion-select-choice-input">
+                                                    <span class="modal__product-portion-select-choice-text">
+                                                        800 ГР.
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li class="modal__product-portion-select-list-item">
+                                                <label class="modal__product-portion-select-choice">
+                                                    <input type="radio" name="portion-mobile" value="900 ГР."
+                                                        class="modal__product-portion-select-choice-input">
+                                                    <span class="modal__product-portion-select-choice-text">
+                                                        900 ГР.
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li class="modal__product-portion-select-list-item">
+                                                <label class="modal__product-portion-select-choice">
+                                                    <input type="radio" name="portion-mobile" value="1000 ГР."
+                                                        class="modal__product-portion-select-choice-input">
+                                                    <span class="modal__product-portion-select-choice-text">
+                                                        1000 ГР.
+                                                    </span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="modal__product-submit">
+                            <span class="modal__product-submit-only-desktop-text">
+                                Добавить
+                            </span>
+                            в корзину
+                            <span class="modal__product-submit-price">
+                                199 ₽
+                            </span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal js-modal" id="sauce-modal">
+    <div class="modal__inner">
+        <button class="modal__close js-close-modal">
+            <svg width="14" height="14" aria-hidden="true">
+                <use xlink:href="#close"></use>
+            </svg>
+        </button>
+        <div class="modal__product">
+            <div class="modal__product-left-col">
+                <div class="modal__product-image-wrapper">
+                    <img src="/images/modals/sauce.webp" alt="" class="modal__product-image" loading="lazy">
+                </div>
+            </div>
+            <div class="modal__product-right-col">
+                <form action="/" class="modal__product-form">
+                    <div class="modal__product-content">
+                        <div class="modal__product-content-inner" data-lenis-prevent="">
+                            <h3 class="modal__product-heading">
+                                СОУС ФИРМЕННЫЙ
+                            </h3>
+
+
+                            <div class="modal__product-ingredients">
+                                Острый соус на основе томатов в собственном соку, с добавлением чеснока, специй и зелени
+                            </div>
+
+                            <div class="modal__product-variants">
+
+                                <div class="modal__product-variants-choices">
+                                    <ul class="modal__product-variants-choices-list">
+                                        <li class="modal__product-variants-choices-list-item">
+                                            <label class="modal__product-variants-choices-label">
+                                                <input class="modal__product-variants-choices-input" name="size"
+                                                    type="radio" checked="" value="standard" />
+                                                <span class="modal__product-variants-choices-text">
+                                                    Стандартная
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="modal__product-variants-choices-list-item">
+                                            <label class="modal__product-variants-choices-label">
+                                                <input class="modal__product-variants-choices-input" name="size"
+                                                    type="radio" value="big" />
+                                                <span class="modal__product-variants-choices-text">
+                                                    большая
+                                                </span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__product-controls">
+                        <div class="modal__product-counter js-counter">
+                            <button class="modal__product-counter-btn js-counter-minus" type="button">
+                                <svg width="14" height="14" aria-hidden="true">
+                                    <use xlink:href="#minus"></use>
+                                </svg>
+                            </button>
+                            <label class="modal__product-counter-value">
+                                <input type="number" class="modal__product-counter-value-input js-counter-value"
+                                    name="counter" readonly="" value="1">
+                            </label>
+                            <button class="modal__product-counter-btn js-counter-plus" type="button">
+                                <svg width="14" height="14" aria-hidden="true">
+                                    <use xlink:href="#plus"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <button class="modal__product-submit">
+                            <span class="modal__product-submit-only-desktop-text">
+                                Добавить
+                            </span>
+                            в корзину
+                            <span class="modal__product-submit-price">
+                                199 ₽
+                            </span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

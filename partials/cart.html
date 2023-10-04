@@ -1,0 +1,344 @@
+<div class="cart">
+    <div class="cart__header">
+        <div class="cart__header-content">
+            <button class="cart__header-back js-close-cart" type="button">
+                <svg width="14" height="14" aria-hidden="true">
+                    <use xlink:href="#back-arrow"></use>
+                </svg>
+            </button>
+            <a href="/" class="cart__header-logo">
+                <img src="/images/logo.webp" alt="" class="cart__header-logo-image">
+                <div class="cart__header-logo-content">
+                    <div class="cart__header-logo-name">
+                        Шампур
+                    </div>
+                    <div class="cart__header-logo-city">
+                        <svg width="14" height="14" aria-hidden="true">
+                            <use xlink:href="#location"></use>
+                        </svg>
+                        Казань
+                    </div>
+                </div>
+            </a>
+
+            <button class="cart__header-burger js-close-cart js-open-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+    <div class="cart__inner" data-lenis-prevent="">
+
+        <button class="cart__close js-close-cart" type="button">
+            <svg width="14" height="14" aria-hidden="true">
+                <use xlink:href="#cart-close"></use>
+            </svg>
+        </button>
+        <div class="cart__inner-wrapper">
+            <div class="cart__inner-wrapper-scroller" data-lenis-prevent="">
+                <div class="cart__top-row">
+                    <h3 class="cart__heading">
+                        Корзина
+                        <span class="cart__count">
+                            (2)
+                        </span>
+                    </h3>
+                    <form action="/" method="POST" class="cart__clear">
+                        <button class="cart__clear-btn" type="submit">
+                            Очистить
+                        </button>
+                    </form>
+                </div>
+                <ul class="cart__list">
+                    <li class="cart__list-item">
+                        <div class="cart__card">
+                            <div class="cart__card-image-container">
+                                <img src="/images/cart/1.webp" alt="" class="cart__card-image">
+                            </div>
+                            <div class="cart__card-content">
+                                <h4 class="cart__card-title">
+                                    Классическая шаурма
+                                </h4>
+                                <div class="cart__card-desc">
+                                    С курицей, стандартная, соус фирменный, Сыр, халапеньо,<br> Без лука
+                                </div>
+                                <form action="/" method="POST" class="cart__card-remove">
+                                    <button class="cart__card-remove-submit" type="submit">
+                                        <svg width="14" height="14" aria-hidden="true">
+                                            <use xlink:href="#card-remove"></use>
+                                        </svg>
+                                    </button>
+                                </form>
+                                <div class="cart__card-bottom-row">
+                                    <div class="cart__card-counter js-counter">
+                                        <button class="cart__card-counter-btn js-counter-minus" type="button">
+                                            <svg width="14" height="14" aria-hidden="true">
+                                                <use xlink:href="#minus"></use>
+                                            </svg>
+                                        </button>
+                                        <label class="cart__card-counter-value">
+                                            <input type="number" class="cart__card-counter-value-input js-counter-value"
+                                                name="counter" readonly="" value="1">
+                                        </label>
+                                        <button class="cart__card-counter-btn js-counter-plus" type="button">
+                                            <svg width="14" height="14" aria-hidden="true">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="cart__card-price">
+                                        210 ₽
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cart__list-item">
+                        <div class="cart__card">
+                            <div class="cart__card-image-container">
+                                <img src="/images/cart/2.webp" alt="" class="cart__card-image">
+                            </div>
+                            <div class="cart__card-content">
+                                <h4 class="cart__card-title">
+                                    Картофель фри
+                                </h4>
+                                <div class="cart__card-desc">
+                                    Без соуса
+                                </div>
+                                <form action="/" method="POST" class="cart__card-remove">
+                                    <button class="cart__card-remove-submit" type="submit">
+                                        <svg width="14" height="14" aria-hidden="true">
+                                            <use xlink:href="#card-remove"></use>
+                                        </svg>
+                                    </button>
+                                </form>
+                                <div class="cart__card-bottom-row">
+                                    <div class="cart__card-counter js-counter">
+                                        <button class="cart__card-counter-btn js-counter-minus" type="button">
+                                            <svg width="14" height="14" aria-hidden="true">
+                                                <use xlink:href="#minus"></use>
+                                            </svg>
+                                        </button>
+                                        <label class="cart__card-counter-value">
+                                            <input type="number" class="cart__card-counter-value-input js-counter-value"
+                                                name="counter" readonly="" value="1">
+                                        </label>
+                                        <button class="cart__card-counter-btn js-counter-plus" type="button">
+                                            <svg width="14" height="14" aria-hidden="true">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="cart__card-price">
+                                        199 ₽
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cart__list-item">
+                        <div class="cart__card">
+                            <div class="cart__card-image-container">
+                                <img src="/images/cart/1.webp" alt="" class="cart__card-image">
+                            </div>
+                            <div class="cart__card-content">
+                                <h4 class="cart__card-title">
+                                    Классическая шаурма
+                                </h4>
+                                <div class="cart__card-desc">
+                                    С курицей, стандартная, соус фирменный, Сыр, халапеньо,<br> Без лука
+                                </div>
+                                <form action="/" method="POST" class="cart__card-remove">
+                                    <button class="cart__card-remove-submit" type="submit">
+                                        <svg width="14" height="14" aria-hidden="true">
+                                            <use xlink:href="#card-remove"></use>
+                                        </svg>
+                                    </button>
+                                </form>
+                                <div class="cart__card-bottom-row">
+                                    <div class="cart__card-counter js-counter">
+                                        <button class="cart__card-counter-btn js-counter-minus" type="button">
+                                            <svg width="14" height="14" aria-hidden="true">
+                                                <use xlink:href="#minus"></use>
+                                            </svg>
+                                        </button>
+                                        <label class="cart__card-counter-value">
+                                            <input type="number" class="cart__card-counter-value-input js-counter-value"
+                                                name="counter" readonly="" value="1">
+                                        </label>
+                                        <button class="cart__card-counter-btn js-counter-plus" type="button">
+                                            <svg width="14" height="14" aria-hidden="true">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="cart__card-price">
+                                        210 ₽
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cart__list-item">
+                        <div class="cart__card">
+                            <div class="cart__card-image-container">
+                                <img src="/images/cart/2.webp" alt="" class="cart__card-image">
+                            </div>
+                            <div class="cart__card-content">
+                                <h4 class="cart__card-title">
+                                    Картофель фри
+                                </h4>
+                                <div class="cart__card-desc">
+                                    Без соуса
+                                </div>
+                                <form action="/" method="POST" class="cart__card-remove">
+                                    <button class="cart__card-remove-submit" type="submit">
+                                        <svg width="14" height="14" aria-hidden="true">
+                                            <use xlink:href="#card-remove"></use>
+                                        </svg>
+                                    </button>
+                                </form>
+                                <div class="cart__card-bottom-row">
+                                    <div class="cart__card-counter js-counter">
+                                        <button class="cart__card-counter-btn js-counter-minus" type="button">
+                                            <svg width="14" height="14" aria-hidden="true">
+                                                <use xlink:href="#minus"></use>
+                                            </svg>
+                                        </button>
+                                        <label class="cart__card-counter-value">
+                                            <input type="number" class="cart__card-counter-value-input js-counter-value"
+                                                name="counter" readonly="" value="1">
+                                        </label>
+                                        <button class="cart__card-counter-btn js-counter-plus" type="button">
+                                            <svg width="14" height="14" aria-hidden="true">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="cart__card-price">
+                                        199 ₽
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="cart__add">
+                    <h3 class="cart__add-heading">
+                        Добавить к заказу?
+                    </h3>
+                    <div class="cart__add-slider">
+                        <button class="cart__add-arrow cart__add-arrow--prev">
+                            <svg width="14" height="14" aria-hidden="true">
+                                <use xlink:href="#add-prev"></use>
+                            </svg>
+                        </button>
+                        <button class="cart__add-arrow cart__add-arrow--next">
+                            <svg width="14" height="14" aria-hidden="true">
+                                <use xlink:href="#add-next"></use>
+                            </svg>
+                        </button>
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <form action="/" class="cart__add-slider-card-form" method="POST">
+                                        <button class="cart__add-slider-card" type="submit">
+                                            <div class="cart__add-slider-card-image-container">
+                                                <img src="/images/cart/2.webp" alt=""
+                                                    class="cart__add-slider-card-image">
+                                            </div>
+                                            <div class="cart__add-slider-card-content">
+                                                <h4 class="cart__add-slider-card-title">
+                                                    Картофель
+                                                    фри
+                                                </h4>
+                                                <div class="cart__add-slider-card-price">
+                                                    199 ₽
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </form>
+                                </div>
+                                <div class="swiper-slide">
+                                    <form action="/" class="cart__add-slider-card-form" method="POST">
+                                        <button class="cart__add-slider-card">
+                                            <div class="cart__add-slider-card-image-container">
+                                                <img src="/images/cart/3.webp" alt=""
+                                                    class="cart__add-slider-card-image">
+                                            </div>
+                                            <div class="cart__add-slider-card-content">
+                                                <h4 class="cart__add-slider-card-title">
+                                                    Кола
+                                                </h4>
+                                                <div class="cart__add-slider-card-price">
+                                                    79 ₽
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart__bottom">
+            <div class="cart__bottom-info">
+                <ul class="cart__bottom-info-list">
+                    <li class="cart__bottom-info-list-item">
+                        <div class="cart__bottom-info-card">
+                            <div class="cart__bottom-info-card-key">
+                                2 товара
+                            </div>
+                            <div class="cart__bottom-info-card-value">
+                                2 599 ₽
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cart__bottom-info-list-item">
+                        <div class="cart__bottom-info-card">
+                            <div class="cart__bottom-info-card-key">
+                                Время доставки
+                            </div>
+                            <div class="cart__bottom-info-card-value">
+                                30-60 мин
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cart__bottom-info-list-item">
+                        <div class="cart__bottom-info-card">
+                            <div class="cart__bottom-info-card-key">
+                                Доставка
+                            </div>
+                            <div class="cart__bottom-info-card-value">
+                                199 ₽
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="cart__bottom-remaining">
+                    <svg width="14" height="14" aria-hidden="true">
+                        <use xlink:href="#remaining"></use>
+                    </svg>
+                    До бесплатной доставки осталось 801 ₽
+                </div>
+            </div>
+            <div class="cart__total">
+                <div class="cart__total-amount-text">
+                    Сумма заказа
+                </div>
+                <div class="cart__total-amount-price">
+                    2 599 ₽
+                </div>
+                <div class="cart__total-amount-checkout-wrapper">
+                    <a href="#" class="cart__total-amount-checkout">
+                        <span class="cart__total-amount-checkout-desktop-text">Перейти</span> к оформлению
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+:root {
+  --primary-color: #ff6939;
+  --text-color: black;
+  --roboto-flex: "Roboto Flex", sans-serif;
+  --golos: "Golos Text", sans-serif;
+  --content-padding: 4rem;
+  --container-width: 155.2rem;
+  --side-padding: 5.6rem;
+
+  @include breakpoint(mobile) {
+    --content-padding: 0.8rem;
+  }
+}

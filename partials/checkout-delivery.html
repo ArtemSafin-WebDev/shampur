@@ -1,0 +1,302 @@
+<section class="checkout">
+    <div class="checkout__content">
+        <div class="checkout__top-row">
+            <a href="#" class="checkout__logo">
+                <img src="/images/logo.webp" alt="" class="checkout__logo-image">
+                <div class="checkout__logo-content">
+                    <div class="checkout__logo-name">
+                        Шампур
+                    </div>
+                    <div class="checkout__logo-city">
+                        Казань
+                    </div>
+                </div>
+            </a>
+        </div>
+        <a href="#" class="checkout__back-link">
+            <svg width="14" height="14" aria-hidden="true">
+                <use xlink:href="#back-link"></use>
+            </svg>
+            Назад
+        </a>
+        <h1 class="checkout__heading">
+            оформление заказа
+        </h1>
+        <div class="checkout__layout">
+            <div class="checkout__left-col">
+                <div class="checkout__main-block">
+                    <div class="checkout__links">
+                        <a href="#" class="checkout__link active">
+                            <svg width="14" height="14" aria-hidden="true">
+                                <use xlink:href="#car"></use>
+                            </svg>
+                            Доставка
+                        </a>
+                        <a href="#" class="checkout__link">
+                            <svg width="14" height="14" aria-hidden="true">
+                                <use xlink:href="#place"></use>
+                            </svg>
+                            Самовывоз
+                        </a>
+                    </div>
+                    <form action="/" method="POST" class="checkout__form" id="checkout-form">
+                        <div class="checkout__form-block">
+                            <h3 class="checkout__form-block-heading">
+                                личные данные
+                            </h3>
+                            <div class="checkout__form-fields">
+                                <div class="checkout__form-field checkout__form-field--half">
+                                    <label class="checkout__form-label">
+                                        <input type="text" class="checkout__form-input" name="name" required=""
+                                            placeholder="Имя">
+                                        <span class="checkout__form-label-text">
+                                            Имя
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="checkout__form-field checkout__form-field--half">
+                                    <label class="checkout__form-label">
+                                        <input type="tel" class="checkout__form-input" name="phone" required=""
+                                            placeholder="Телефон">
+                                        <span class="checkout__form-label-text">
+                                            Телефон
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkout__form-block">
+                            <button class="checkout__form-address-btn">
+                                <span class="checkout__form-address-btn-text">
+                                    Выбрать адрес доставки
+                                </span>
+                            </button>
+                            <div class="checkout__form-address-wrapper">
+                                <h3 class="checkout__form-block-heading">
+                                    Адрес доставки
+                                </h3>
+                                <div class="checkout__form-fields">
+                                    <div class="checkout__form-field checkout__form-field--fullwidth">
+                                        <label class="checkout__form-label">
+                                            <input type="text" class="checkout__form-input" name="address" required=""
+                                                placeholder="Город, улица и дом">
+                                            <span class="checkout__form-label-text">
+                                                Город, улица и дом
+                                            </span>
+                                        </label>
+                                        <button class="checkout__form-detect-address" type="button">
+                                            <svg width="14" height="14" aria-hidden="true">
+                                                <use xlink:href="#location"></use>
+                                            </svg>
+                                            Определить местоположение
+                                        </button>
+                                    </div>
+                                    <div class="checkout__form-field">
+                                        <label class="checkout__form-label">
+                                            <input type="text" class="checkout__form-input" name="code" required=""
+                                                placeholder="Код двери">
+                                            <span class="checkout__form-label-text">
+                                                Код двери
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="checkout__form-field">
+                                        <label class="checkout__form-label">
+                                            <input type="text" class="checkout__form-input" name="floor" required=""
+                                                placeholder="Этаж">
+                                            <span class="checkout__form-label-text">
+                                                Этаж
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="checkout__form-field">
+                                        <label class="checkout__form-label">
+                                            <input type="text" class="checkout__form-input" name="block" required=""
+                                                placeholder="Подъезд">
+                                            <span class="checkout__form-label-text">
+                                                Подъезд
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="checkout__form-field">
+                                        <label class="checkout__form-label">
+                                            <input type="text" class="checkout__form-input" name="block" required=""
+                                                placeholder="Подъезд">
+                                            <span class="checkout__form-label-text">
+                                                Квартира
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="checkout__form-field checkout__form-field--fullwidth">
+                                        <label class="checkout__form-label">
+                                            <input type="text" class="checkout__form-input" name="comment"
+                                                placeholder="Комментарий">
+                                            <span class="checkout__form-label-text">
+                                                Комментарий
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="checkout__form-map">
+                                    <div class="checkout__form-map-element">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="checkout__payment-method">
+                    <button class="checkout__payment-method-btn">
+
+                    </button>
+                    <div class="checkout__payment-method-wrapper">
+                        <h3 class="checkout__payment-method-heading">
+                            Способ оплаты
+                        </h3>
+                        <div class="checkout__payment-method-selection">
+                            <label class="checkout__payment-method-radio">
+                                <input type="radio" name="payment" class="checkout__payment-method-radio-input"
+                                    value="Картой онлайн" checked="">
+                                <span class="checkout__payment-method-radio-mark">
+
+                                </span>
+                                <span class="checkout__payment-method-radio-text">
+                                    Картой онлайн
+                                </span>
+                            </label>
+                            <label class="checkout__payment-method-radio">
+                                <input type="radio" name="payment" class="checkout__payment-method-radio-input"
+                                    value="Картой курьеру">
+                                <span class="checkout__payment-method-radio-mark">
+
+                                </span>
+                                <span class="checkout__payment-method-radio-text">
+                                    Картой курьеру
+                                </span>
+                            </label>
+                            <label class="checkout__payment-method-radio">
+                                <input type="radio" name="payment" class="checkout__payment-method-radio-input"
+                                    value="Картой курьеру">
+                                <span class="checkout__payment-method-radio-mark">
+
+                                </span>
+                                <span class="checkout__payment-method-radio-text">
+                                    Картой курьеру
+                                </span>
+                            </label>
+                            <label class="checkout__payment-method-radio">
+                                <input type="radio" name="payment" class="checkout__payment-method-radio-input"
+                                    value="Наличными">
+                                <span class="checkout__payment-method-radio-mark">
+
+                                </span>
+                                <span class="checkout__payment-method-radio-text">
+                                    Наличными
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="checkout__right-col">
+                <div class="checkout__summary">
+                    <h2 class="checkout__summary-heading">
+                        Состав заказа
+                    </h2>
+                    <ul class="checkout__summary-list">
+                        <li class="checkout__summary-list-item">
+                            <div class="checkout__summary-card">
+                                <div class="checkout__summary-card-content">
+                                    <h3 class="checkout__summary-card-title">
+                                        Картофель фри
+                                    </h3>
+                                    <div class="checkout__summary-card-desc">
+                                        Соус сырный
+                                    </div>
+                                </div>
+                                <div class="checkout__summary-summary-card-price">
+                                    199 ₽
+                                </div>
+                            </div>
+                        </li>
+                        <li class="checkout__summary-list-item">
+                            <div class="checkout__summary-card">
+                                <div class="checkout__summary-card-content">
+                                    <h3 class="checkout__summary-card-title">
+                                        Классическая шаурма
+                                    </h3>
+                                    <div class="checkout__summary-card-desc">
+                                        С курицей, стандартная, соус фирменный, Сыр, халапеньо, Без лука
+                                    </div>
+                                </div>
+                                <div class="checkout__summary-summary-card-price">
+                                    199 ₽
+                                </div>
+                            </div>
+                        </li>
+                        <li class="checkout__summary-list-item">
+                            <div class="checkout__summary-card">
+                                <div class="checkout__summary-card-content">
+                                    <h3 class="checkout__summary-card-title">
+                                        комбо с шашлыком и курицей
+                                    </h3>
+                                    <div class="checkout__summary-card-desc">
+                                        Без соуса
+                                    </div>
+                                </div>
+                                <div class="checkout__summary-summary-card-price">
+                                    799 ₽
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="checkout__total">
+                        <ul class="checkout__total-list">
+                            <li class="checkout__total-list-item">
+                                <div class="checkout__total-card">
+                                    <div class="checkout__total-card-key">
+                                        3 товара
+                                    </div>
+                                    <div class="checkout__total-card-value">
+                                        2 599 ₽
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="checkout__total-list-item">
+                                <div class="checkout__total-card">
+                                    <div class="checkout__total-card-key">
+                                        Время доставки
+                                    </div>
+                                    <div class="checkout__total-card-value">
+                                        30-60 мин
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="checkout__total-list-item">
+                                <div class="checkout__total-card">
+                                    <div class="checkout__total-card-key">
+                                        Доставка
+                                    </div>
+                                    <div class="checkout__total-card-value">
+                                        Бесплатно
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="checkout__pay">
+                            <button class="checkout__pay-btn">
+                                Оплатить
+                            </button>
+                            <div class="checkout__pay-price">
+                                2 599 ₽
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,93 @@
+<section class="home-catalog">
+    <div class="home-catalog__content">
+        <div class="home-catalog__map">
+            <div class="home-catalog__map-wrapper js-check-address-wrapper" data-center="55.796118, 49.106538"
+                data-zoom="12" data-geojson="/map/area.json" data-city="Казань" data-invert-coords="">
+                <div class="home-catalog__map-element js-check-address-element">
+
+                </div>
+            </div>
+            <div class="home-catalog__search">
+                <h3 class="home-catalog__search-heading">
+                    Проверьте ваш адрес на возможность получения заказа
+                    <div class="home-catalog__search-icon">
+                        <svg width="14" height="14" aria-hidden="true">
+                            <use xlink:href="#arrow-down"></use>
+                        </svg>
+                    </div>
+                </h3>
+                <div class="home-catalog__search-content">
+                    <div class="home-catalog__search-inner">
+                        <form action="/" method="GET" class="home-catalog__search-form js-check-address-form">
+                            <label class="home-catalog__search-form-input-wrapper">
+                                <svg width="14" height="14" aria-hidden="true">
+                                    <use xlink:href="#search"></use>
+                                </svg>
+                                <input type="text" class="home-catalog__search-form-search-input" name="address"
+                                    placeholder="Например, ул. Пушкина, д. 17" autocomplete="off">
+                            </label>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="home-catalog__promo" id="promo">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#" class="home-catalog__promo-card">
+                            <img src="/images/promo/1.webp" alt="" class="home-catalog__promo-card-image">
+                            <h3 class="home-catalog__promo-card-title">
+                                Скидка за сторис
+                            </h3>
+                            <div class="home-catalog__promo-card-text">
+                                Отмечайте нас в сторис и получайте скидку 5%
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="home-catalog__promo-card">
+                            <img src="/images/promo/2.webp" alt="" class="home-catalog__promo-card-image">
+                            <h3 class="home-catalog__promo-card-title">
+                                Блюдо дня!
+                            </h3>
+                            <div class="home-catalog__promo-card-text">
+                                Комбо фирменный с&nbsp;шашлыком
+                                из&nbsp;свинины
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="home-catalog__promo-card">
+                            <img src="/images/promo/3.webp" alt="" class="home-catalog__promo-card-image">
+                            <h3 class="home-catalog__promo-card-title">
+                                Доставка и оплата
+                            </h3>
+                            <div class="home-catalog__promo-card-text">
+                                При заказе от 1000 ₽
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="home-catalog__blocks" id="menu">
+            {{#each homeCatalog}}
+                <div class="home-catalog__block" id="{{ id }}">
+                    <h3 class="home-catalog__block-heading">
+                        {{heading}}
+                    </h3>
+                    <ul class="home-catalog__list">
+                        {{#each items}}
+                            <li class="home-catalog__list-item">
+                                {{> catalog-card }}
+                            </li>
+                        {{/each}}
+                    </ul>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</section>

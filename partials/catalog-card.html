@@ -1,0 +1,26 @@
+<a href="{{ modal }}" class="catalog-card js-open-modal">
+    <div class="catalog-card__image-container">
+        <img src="{{ src }}" alt="" class="catalog-card__image" loading="lazy">
+    </div>
+    <div class="catalog-card__info">
+        <h3 class="catalog-card__title">
+            {{title }}
+        </h3>
+        {{#if desc}}
+            <div class="catalog-card__desc">
+                {{desc}}
+            </div>
+        {{/if}}
+        {{#if grams}}
+            <div class="catalog-card__grams">
+                {{grams}}
+            </div>
+        {{/if}}
+    </div>
+    <div class="catalog-card__price">
+        {{ price }}
+    </div>
+    <div class="catalog-card__btn">
+        В корзину
+    </div>
+</a>

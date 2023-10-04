@@ -1,0 +1,188 @@
+.catalog-card {
+  flex-grow: 1;
+  padding: 2rem;
+  border-radius: 1.6rem;
+  background: white;
+  box-shadow: 0px 1.2rem 5rem 0px rgba(0, 0, 0, 0.05);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "image image" "info info" "price button";
+  grid-gap: 2rem;
+  grid-row-gap: 3.2rem;
+  color: var(--text-color);
+  transition: color 0.2s, box-shadow 0.2s, background-color 0.2s, transform 0.2s;
+  &:link,
+  &:visited {
+    color: var(--text-color);
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      box-shadow: 0px 1.8rem 1.8rem 0px rgba(0, 0, 0, 0.1);
+      transform: translateY(-0.7rem);
+
+      .catalog-card__btn {
+        background-color: var(--primary-color);
+        color: white;
+      }
+    }
+  }
+
+  @include breakpoint(mobile) {
+    padding: 1.6rem;
+    border-radius: 1.2rem;
+    box-shadow: 0px 0.6rem 2.5rem 0px rgba(0, 0, 0, 0.07);
+    grid-template-columns: auto 1fr;
+    grid-template-areas: "image info" "image price";
+    grid-template-rows: 1fr auto;
+    grid-gap: 2rem;
+    grid-row-gap: 0.8rem;
+    position: relative;
+  }
+}
+
+.catalog-card__image-container {
+  position: relative;
+  border-radius: 1.6rem;
+  overflow: hidden;
+  grid-area: image;
+  &::before {
+    content: "";
+    display: block;
+    padding-bottom: 75%;
+  }
+
+  @include breakpoint(mobile) {
+    border-radius: 0.8rem;
+    width: 12.4rem;
+    align-self: flex-start;
+    &::before {
+      padding-bottom: 100%;
+    }
+  }
+}
+
+.catalog-card__image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.catalog-card__title {
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%;
+  letter-spacing: -0.018rem;
+  text-transform: uppercase;
+  font-family: var(--roboto-flex);
+
+  @include breakpoint(mobile) {
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%;
+    letter-spacing: -0.028rem;
+    text-transform: uppercase;
+  }
+}
+
+.catalog-card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  grid-area: info;
+
+  @include breakpoint(mobile) {
+    gap: 0.6rem;
+  }
+}
+
+.catalog-card__price {
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%;
+  letter-spacing: -0.018rem;
+  text-transform: uppercase;
+  font-family: var(--roboto-flex);
+  grid-area: price;
+  align-self: center;
+
+  @include breakpoint(mobile) {
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: -0.011rem;
+    text-transform: uppercase;
+    padding: 0.65rem 1.2rem;
+    color: var(--primary-color);
+    border-radius: 0.6rem;
+    justify-self: flex-start;
+    border: 1px solid var(--primary-color);
+  }
+}
+
+.catalog-card__btn {
+  flex-shrink: 0;
+  justify-self: flex-end;
+  align-self: center;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -0.013rem;
+  text-transform: uppercase;
+  padding: 1.6rem 2.4rem;
+  border-radius: 0.8rem;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  transition: color 0.2s, background-color 0.2s;
+  grid-area: button;
+  font-family: var(--roboto-flex);
+
+  @include breakpoint(mobile) {
+    display: none;
+  }
+}
+
+.catalog-card__desc {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: -0.014rem;
+  color: rgba(0, 0, 0, 0.5);
+
+  @include breakpoint(mobile) {
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -0.012rem;
+  }
+}
+
+.catalog-card__grams {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: -0.014rem;
+  color: rgba(0, 0, 0, 0.5);
+  display: none;
+
+  @include breakpoint(mobile) {
+    display: block;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -0.012rem;
+  }
+}
